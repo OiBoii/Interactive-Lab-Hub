@@ -1,4 +1,4 @@
-# IDD-Fa20-Lab1: Blink!
+# IDD-Fa20-Lab1: Blink! 
 
 **A lab report by Omer Ifrach Student**
 
