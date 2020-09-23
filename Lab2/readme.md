@@ -1,12 +1,5 @@
 # Make a Digital Timer!
- 
-## In The Report
-For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include snippets of code that explain what you did.
-
-Deliverables are due next Tuesday. Post a link to the wiki page on your main class hub page.
-
-## Part A. Solder your OLED
-
+![Rotary Encoder](https://cdn-shop.adafruit.com/1200x900/377-02.jpg)
 ## Part B. Make a lowly Multimeter
 Incorporate the LCD into with this [AnalogInput code](https://www.arduino.cc/en/tutorial/AnalogInput) (this can found in the Examples code under 03.Analog->AnalogInput) so that you can read out the exact analog value that you are reading in on Analog Pin 0 and write it to your LCD. It's your own voltmeter! 
 
