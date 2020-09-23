@@ -1,5 +1,5 @@
 # Make a Digital Timer!
-![Rotary Encoder](Interactive-Lab-Hub/Lab2/IMG_20200922_234147.jpg)
+![Setup](Interactive-Lab-Hub/Lab2/IMG_20200922_234147.jpg)
 ## Part B. Make a lowly Multimeter
 Incorporate the LCD into with this [AnalogInput code](https://www.arduino.cc/en/tutorial/AnalogInput) (this can found in the Examples code under 03.Analog->AnalogInput) so that you can read out the exact analog value that you are reading in on Analog Pin 0 and write it to your LCD. It's your own voltmeter! 
 
@@ -18,7 +18,7 @@ Leave your LCD set up for the rest of Lab, and leave it set up when you finish L
 ![Rotary Encoder](https://cdn-shop.adafruit.com/1200x900/377-02.jpg)
 We have a high-quality 24 pulse encoder with knob and nice, click-y rotation detents.
  
-[Product Page](https://www.adafruit.com/product/377)
+[Product Page](https://github.com/OiBoii/Interactive-Lab-Hub/tree/master/Lab2/2b_lowly)
 [Datasheet](https://cdn-shop.adafruit.com/datasheets/pec11.pdf)
  
 Like a potentiometer, a rotary encoder has 3 pins; unlike a potentiometer, an encoder can be spun round and round without stop. Rotary encoders use [quadrature](http://en.wikipedia.org/wiki/Rotary_encoder) to tell how fast and in which direction you are turning a knob. To connect the encoder to your breadboard, you can insert three pins directly into motherboard like picture below.
