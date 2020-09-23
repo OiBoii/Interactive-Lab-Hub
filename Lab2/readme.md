@@ -1,17 +1,12 @@
 # Make a Digital Timer!
+
 ![Screenshot](IMG_20200922_234147.jpg)
+
 ## Part B. Make a lowly Multimeter
 
-**e. Include a copy of your Lowly Multimeter code in your lab write-up.**
 [Lowly Code](https://github.com/OiBoii/Interactive-Lab-Hub/tree/master/Lab2/2b_lowly)
 
-## Part C. Using a time-based digital sensor
-
 ## Part D. Make your Arduino sing!
-
-Let's make the Arduino make some noise! We are going to start with the Tone example program:
- 
-`Examples->Digital->toneMelody`
 
 [Code For Avengers Theme](https://github.com/OiBoii/Interactive-Lab-Hub/tree/master/Lab2/2d_avengers).
 
