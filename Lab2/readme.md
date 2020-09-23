@@ -28,5 +28,3 @@ The Star Wars Theme Song
 [Video](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab2/avengers.mp4)
 
 [Melody Matlab Output](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab2/Avengers_Theme.wav)
-
-**b. Post a link to the completed lab report your GitHub repo.**
