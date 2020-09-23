@@ -13,7 +13,7 @@ Let's make the Arduino make some noise! We are going to start with the Tone exam
  
 `Examples->Digital->toneMelody`
 
-[Code For Avengers Theme] (https://github.com/OiBoii/Interactive-Lab-Hub/tree/master/Lab2/2d_avengers).
+[Code For Avengers Theme](https://github.com/OiBoii/Interactive-Lab-Hub/tree/master/Lab2/2d_avengers).
 
 **a. How would you change the code to make the song play twice as fast?**
  
