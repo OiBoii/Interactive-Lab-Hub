@@ -1,5 +1,5 @@
 # Make a Digital Timer!
-![Rotary Encoder](https://cdn-shop.adafruit.com/1200x900/377-02.jpg)
+![Rotary Encoder](Interactive-Lab-Hub/Lab2/IMG_20200922_234147.jpg)
 ## Part B. Make a lowly Multimeter
 Incorporate the LCD into with this [AnalogInput code](https://www.arduino.cc/en/tutorial/AnalogInput) (this can found in the Examples code under 03.Analog->AnalogInput) so that you can read out the exact analog value that you are reading in on Analog Pin 0 and write it to your LCD. It's your own voltmeter! 
 
