@@ -1,5 +1,5 @@
 # Make a Digital Timer!
-![Setup]((https://github.com/OiBoii/Interactive-Lab-Hub/Lab2/IMG_20200922_234147.jpg)
+[Setup]((https://github.com/OiBoii/Interactive-Lab-Hub/Lab2/IMG_20200922_234147.jpg)
 ## Part B. Make a lowly Multimeter
 
 **e. Include a copy of your Lowly Multimeter code in your lab write-up.**
