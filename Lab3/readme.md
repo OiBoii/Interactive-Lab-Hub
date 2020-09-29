@@ -25,7 +25,6 @@ Red, brown and yellow respectively.
 **a. Which Arduino pin should the signal line of the servo be attached to?**
 Signal <--- Pin9. (PWM) - myservo.attach(9)
 
-
 **b. What aspects of the Servo code control angle or speed?**
  Code Excerpt: for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees in steps of 1 degree
 * Controlling the Angle - Changing the range of the loop (currently 0-180).
@@ -36,7 +35,9 @@ Servo rotates with respect to potentiometer angle (see code - sweep)
 
 ## Part D. Autonomy!
 **Include a photo/movie of your autonomous device in action.**
+
 [Video](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab3/PXL_20200929_055402003.mp4)
+
 [Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab3/Sweep.ino)
 
 ## Part E. Paper display
