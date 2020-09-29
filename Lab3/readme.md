@@ -33,20 +33,20 @@ Signal <--- Pin9. (PWM) - myservo.attach(9)
 
 ## Part C. Integrating input and output
 Servo rotates with respect to potentiometer angle (see code - sweep)
-[Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab3/PXL_20200929_055402003.mp4)
 
 ## Part D. Autonomy!
 **Include a photo/movie of your autonomous device in action.**
-[Video](video)
+[Video](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab3/PXL_20200929_055402003.mp4)
+[Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab3/Sweep.ino)
 
 ## Part E. Paper display
 **a. Make a video of your paper display in action.**
 
-<img src="https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab3/Paper%20Display.jpg">
+<img src="https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab%203/Part%20E.gif">
 
 ## Part F. Make it your own
 
-[Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab3/PXL_20200929_055402003.mp4)
+[Code](https://github.com/OiBoii/Interactive-Lab-Hub/tree/master/Lab2/2b_lowly)
 
 **a. Make a video of your final design in action.**
 
