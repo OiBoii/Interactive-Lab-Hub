@@ -33,6 +33,7 @@ Signal <--- Pin9. (PWM) - myservo.attach(9)
 
 ## Part C. Integrating input and output
 Servo rotates with respect to potentiometer angle (see code - sweep)
+[Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab3/PXL_20200929_055402003.mp4)
 
 ## Part D. Autonomy!
 **Include a photo/movie of your autonomous device in action.**
@@ -45,7 +46,7 @@ Servo rotates with respect to potentiometer angle (see code - sweep)
 
 ## Part F. Make it your own
 
-[Code]()
+[Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab3/PXL_20200929_055402003.mp4)
 
 **a. Make a video of your final design in action.**
 
