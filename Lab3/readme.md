@@ -41,7 +41,7 @@ Servo rotates with respect to potentiometer angle (see code - sweep)
 ## Part E. Paper display
 **a. Make a video of your paper display in action.**
 
-<img src="https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab%203/Part%20E.gif">
+<img src="https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab3/Paper%20Display.jpg">
 
 ## Part F. Make it your own
 
