@@ -46,7 +46,7 @@ Servo rotates with respect to potentiometer angle (see code - sweep)
 
 ## Part F. Make it your own
 
-[Code](https://github.com/OiBoii/Interactive-Lab-Hub/tree/master/Lab2/2b_lowly)
+[Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab2/2b_lowly/2b_lowly.ino)
 
 **a. Make a video of your final design in action.**
 
