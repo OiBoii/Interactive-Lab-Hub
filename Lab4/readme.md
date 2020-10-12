@@ -27,15 +27,21 @@ For the report, make a copy of this wiki page for your own repository, and then 
 Deliverables are due next Tuesday. Post a link to the wiki page on your main class hub page.
 
 ## Part A.  Writing to the Serial Monitor
- 
+
 ![pot schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/Pot_schem.png)
  
 The OLED display from the Lab 02 is a great and helpful tool for debug purposes; the serial monitor is another. Use the code from `File->Examples->Communication->Graph` as a template to print data from your potentiometer to the serial monitor. Don't disconnect the USB cable after uploading the code; instead, use the serial monitor button on the Arduino IDE (in the upper right corner, magnifying glass icon) to see the data coming from the Arduino. 
  
 **a. Based on the readings from the serial monitor, what is the range of the analog values being read?**
- 
-**b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have** (hint: where might you look to find this sort of thing)? How many are you using with the range of values you're seeing?
- 
+
+0 to 1023
+
+**b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have** (hint: where might you look to find this sort of thing)? How many are you The The Arduino could map the input voltage (0 to 3.3V / 5V) to integers between 0-1023. That is, 2^*10*=1024.  between 0-1023
+using with the range of values you're seeing?
+
+Tj
+10-bits. (Google search, but could be found on the data sheet).using 10 based on potentiometer readings (2^10 = 1024)
+
 You can also read inputs from the serial monitor, or wait for the serial monitor to open before spewing data over the USB line! A nice tutorial on the basic serial transmit functions can be found at http://arduino.cc/en/Tutorial/AnalogReadSerial. 
 
 NEW!!! Also you can plot the data with the Arduino Serial Plotter! This can be found under `Tools->Serial Plotter`. Try it out.
