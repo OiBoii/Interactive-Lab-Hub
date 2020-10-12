@@ -37,6 +37,7 @@ the lower the delay value, the faster the LED will blink
 
 **c. What circuit element would you want to add to protect the board and external LED?**
 Resistors
+
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
 
 If both HIGH & LOW delay is set to 10, the LED flicker is Imperceptible. However,
