@@ -46,10 +46,16 @@ To get set up, we will use the Blink example code to see how to upload code to t
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
 
-**b. What line(s) of code do you need to change to change the rate of blinking?**
+digitalWrite(LED_BUILTIN, HIGH); // turn the LED on (HIGH is the voltage level) 
 
+digitalWrite(LED_BUILTIN, LOW); // turn the LED off by making the voltage LOW
+
+The digital wire lines determine the status of the LED (ON = HIGH, OFF = LOW) to make the LED blink, we need to make sure the LED is set to go ON and OFF.
+
+**b. What line(s) of code do you need to change to change the rate of blinking?**
+delay(1000); // wait for a second the lower the delay value, the faster the LED will blink
 **c. What circuit element would you want to add to protect the board and external LED?**
- 
+ Resistors 
 To compile and upload your code, take the following steps (note that 1, 2 should only have to be done once):
  
 1) In the Arduino program, select the board we are using: Tools -> Board -> Arduino/Genuino UNO 
