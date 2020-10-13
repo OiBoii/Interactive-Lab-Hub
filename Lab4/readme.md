@@ -80,7 +80,7 @@ I have tried to implement the code with to different arduinos. Unfortunately, I 
 
 <img src="accelerometer.jpg" width="40%">
 
-[here](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/accelerometer.ino)
+[Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/accelerometer.ino)
 
 ## Part E. Logging values to the EEPROM and reading them back
  
