@@ -22,15 +22,8 @@ E. [Logging Values to the EEPROM and Reading Them Back](#part-f-logging-values-t
 F. [Create your own Data logger!](#part-g-create-your-own-data-logger)
 
 ## In The Report
-For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include snippets of code that explain what you did.
-
-Deliverables are due next Tuesday. Post a link to the wiki page on your main class hub page.
 
 ## Part A.  Writing to the Serial Monitor
-
-<img src="LED RAINBOW.jpg" width="40%">
- 
-The OLED display from the Lab 02 is a great and helpful tool for debug purposes; the serial monitor is another. Use the code from `File->Examples->Communication->Graph` as a template to print data from your potentiometer to the serial monitor. Don't disconnect the USB cable after uploading the code; instead, use the serial monitor button on the Arduino IDE (in the upper right corner, magnifying glass icon) to see the data coming from the Arduino. 
  
 **a. Based on the readings from the serial monitor, what is the range of the analog values being read?**
 
@@ -42,7 +35,6 @@ The Arduino could map the input voltage (0 to 3.3V / 5V) to integers between 0-1
 
 The serial monitor currently shows values between 0-512. Hence, there are 9 ADCs in use.
 
-
 You can also read inputs from the serial monitor, or wait for the serial monitor to open before spewing data over the USB line! A nice tutorial on the basic serial transmit functions can be found at http://arduino.cc/en/Tutorial/AnalogReadSerial. 
 
 NEW!!! Also you can plot the data with the Arduino Serial Plotter! This can be found under `Tools->Serial Plotter`. Try it out.
@@ -51,43 +43,29 @@ For this lab, you can use the serial monitor, plotter and/or the LCD whenever yo
 
 ## Part B. RGB LED
 
-In your kit, you have a "common anode RGB LED." This means that the three LEDs in the RGB package share a common power source, and turn on when the R, G, or B legs have a low enough voltage to cause current to flow. The LONGEST leg is the "common anode" and should be connected to power (do you need a resistor?). The rest of the legs will be connected to pins based on the code you decide to use. 
-
-**You should add the LEDs in the schematic below.**
-
-![RGB LED schematic]("LED_RAINBOW")
-
-<!--Modify the Fade code from Lab 1 so that you have the R, G and B leads of the LED on pins 9, 10 and 11, respectively. You will want to change the code so that you can fade each of the colors separately.-->
-[Here is sample code](https://learn.adafruit.com/adafruit-arduino-lesson-3-rgb-leds/arduino-sketch) that controls the color of an RGB LED using the Arduino.  
-
-<!--**How might you use this with only the parts in your kit? Show us your solution.**-->
+<img src="LED RAINBOW.jpg" width="40%">
 
 ## Part C. Resistance & Voltage Varying Sensors 
-One of the useful aspects of the Arduino is the multitude of analog input pins. We'll explore this more now.
  
+
 ### FSR
-Now that you have a set up that lets you look at changes in the analog voltage from the potentiometer, let's swap in other analog sensors!
-
-<img src=https://cdn-shop.adafruit.com/1200x900/166-00.jpg alt="FSR" width=400>
-
-The FSR (force sensitive resistor) changes resistance — in this case when pressure is applied to the FSR. [Here's the datasheet](https://cdn-shop.adafruit.com/datasheets/FSR400Series_PD.pdf). We'll use a voltage divider with a 27kOhm resistor, using the analog input with the previous potentiometer code. (Feel free to use a 10kOhm resistor instead, or anything in this range.)
-
-![Voltage Divider](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/fsr_voltage_divider.png)
-
-We need a voltage divider because the Arduino can't measure resistance directly, which is the thing that changes when you physically interact with the sensor. A voltage divider circuit converts a change in resistance to a change in voltage.
 
 **a. What voltage values do you see from your force sensor?**
 
+The code maps the force values between 0-255 (256=2^8). The maximum value the display shows is 249. This is equivalent to roughly 996/1023, which is almost 5V. 
+
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
+
+Resistance and force are directly related (that is, when one increases - so does the other and vice versa). However, that relation ship is NOT linear.
+In addition, voltage is inversely proportional to resistance because of the voltage divider (the more resistance we produce - the more current directed the other route). 
+Mathematical relationship: Vo = Vcc*(R/(R+R_FSR))
+That is, voltage varies inversely to resistance - logarithmically.
 
 **c. In `Examples->Basic->Fading` the RGB LED values range from 0-255. What do you have to do so that you get the full range of output voltages from the RGB LED when using your FSR to change the LED color?**
 
-## Flex Sensor, Photo cell, Softpot
-Now experiment with the [flex sensor (Optional)](https://www.adafruit.com/product/1070), [photo cell](https://www.adafruit.com/product/161) and [softpot](https://www.adafruit.com/product/178).
+Yes This could be accomplished using the map() function. In the code linked [here](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/mapFSR_LED.ino)
+ component of the RGB led to demonstrade the code for simplicity. The link to the code can be found below.
 
-<img src=https://cdn-shop.adafruit.com/1200x900/1070-01.jpg alt="flex sensor" width=250>
-<img src=https://cdn-shop.adafruit.com/1200x900/161-00.jpg alt="photocell" width=250>
-<img src=https://cdn-shop.adafruit.com/1200x900/178-00.jpg alt="softpot" width=250>
 
 **a. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
