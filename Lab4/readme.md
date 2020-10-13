@@ -36,11 +36,11 @@ The OLED display from the Lab 02 is a great and helpful tool for debug purposes;
 
 0 to 1023
 
-**b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have** (hint: where might you look to find this sort of thing)? How many are you The The Arduino could map the input voltage (0 to 3.3V / 5V) to integers between 0-1023. That is, 2^*10*=1024.  between 0-1023
-using with the range of values you're seeing?
+**b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have** (hint: where might you look to find this sort of thing)? How many are you The 
+The Arduino could map the input voltage (0 to 3.3V / 5V) to integers between 0-1023. 2^*10*=1024, which requires a 0-bit analog to digital converter. This information could be found on the spec sheet.
 
-Tj
-10-bits. (Google search, but could be found on the data sheet).using 10 based on potentiometer readings (2^10 = 1024)
+The serial monitor currently shows values between 0-512. Hence, there are 9 ADCs in use.
+
 
 You can also read inputs from the serial monitor, or wait for the serial monitor to open before spewing data over the USB line! A nice tutorial on the basic serial transmit functions can be found at http://arduino.cc/en/Tutorial/AnalogReadSerial. 
 
