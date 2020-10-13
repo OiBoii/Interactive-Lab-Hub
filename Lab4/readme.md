@@ -36,7 +36,8 @@ The OLED display from the Lab 02 is a great and helpful tool for debug purposes;
 
 0 to 1023
 
-**b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have** (hint: where might you look to find this sort of thing)? How many are you The 
+**b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have** (hint: where might you look to find this sort of thing)?
+
 The Arduino could map the input voltage (0 to 3.3V / 5V) to integers between 0-1023. 2^*10*=1024, which requires a 0-bit analog to digital converter. This information could be found on the spec sheet.
 
 The serial monitor currently shows values between 0-512. Hence, there are 9 ADCs in use.
@@ -54,7 +55,7 @@ In your kit, you have a "common anode RGB LED." This means that the three LEDs i
 
 **You should add the LEDs in the schematic below.**
 
-![RGB LED schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/rgbled.png)
+![RGB LED schematic]("LED_RAINBOW")
 
 <!--Modify the Fade code from Lab 1 so that you have the R, G and B leads of the LED on pins 9, 10 and 11, respectively. You will want to change the code so that you can fade each of the colors separately.-->
 [Here is sample code](https://learn.adafruit.com/adafruit-arduino-lesson-3-rgb-leds/arduino-sketch) that controls the color of an RGB LED using the Arduino.  
