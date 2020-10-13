@@ -35,12 +35,6 @@ The Arduino could map the input voltage (0 to 3.3V / 5V) to integers between 0-1
 
 The serial monitor currently shows values between 0-512. Hence, there are 9 ADCs in use.
 
-You can also read inputs from the serial monitor, or wait for the serial monitor to open before spewing data over the USB line! A nice tutorial on the basic serial transmit functions can be found at http://arduino.cc/en/Tutorial/AnalogReadSerial. 
-
-NEW!!! Also you can plot the data with the Arduino Serial Plotter! This can be found under `Tools->Serial Plotter`. Try it out.
- 
-For this lab, you can use the serial monitor, plotter and/or the LCD whenever you are told to display something, depending on what you think is easier/prettier.
-
 ## Part B. RGB LED
 
 <img src="LED RAINBOW.jpg" width="40%">
@@ -64,38 +58,29 @@ That is, voltage varies inversely to resistance - logarithmically.
 **c. In `Examples->Basic->Fading` the RGB LED values range from 0-255. What do you have to do so that you get the full range of output voltages from the RGB LED when using your FSR to change the LED color?**
 
 Yes This could be accomplished using the map() function. In the code linked [here](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/mapFSR_LED.ino)
- component of the RGB led to demonstrade the code for simplicity. The link to the code can be found below.
-
+component of the RGB led to demonstrade the code for simplicity. The link to the code can be found below.
 
 **a. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
+* Photoresistor: 10K from A0 to GND.
+* Flex sensor: 10K (same as FSR).
+* Softpot: 10K from P1 to GND & 10K from P2 to Vcc.
+
 **b. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
 
-Control the colors of the LED using the above sensors ( including FSR )
+* Photoresistor: inverse & logarithmic to the intensity of light (decreases with illumination)
+* Flex sensor: linear to the degree it's bent
+* Softpot: linear to touch.
 
 ## Part D. I2C Sensors 
-
-Some more sophisticated sensors have ICs that measure physical phenomena and then output an digital signal indicating what the analog voltage reading is. 
 ### Accelerometer
  
-The accelerometer is a 3-axis, accelerometer based on the LIS3DH. The LIS3DH is a 3.3V part, but the Adafruit board has an onboard voltage regulator so that the part can be powered on 5V power on the Vin pin.
- 
-Here's the [Datasheet](https://cdn-shop.adafruit.com/datasheets/LIS3DH.pdf)
- 
-Unlike the other parts we've used to date, this is a "smart sensor" which can communicate the sensor readings digitally (rather than through an analog voltage) using communication protocols I2C and SPI. 
- 
-[This example code](https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/arduino) is meant to read values from a 3-axis accelerometer out to a computer over the serial monitor. Test it out! Hint: make sure to read the I2C Wiring section carefully, because the picture uses a different kind of Arduino. Here's a Fritzing diagram of the correct wiring:
-
-https://github.com/FAR-Lab/Interactive-Lab-Hub/tree/master/Lab4/LIS3DH_breadboard.JPG
-
-Adapt the code to indicate what your readings are on the X, Y and Z axes of the accelerometer on your 16x2 LCD panel.
-
-Now set up the RGB LED so that each color is mapped to the X, Y and Z axes accelerations.
- 
-Get a feel for the data the accelerometer provides. Pick up the Arduino+accelerometer board and tilt it in various directions. Start by holding it so that the accelerometer board is parallel to the ground. Find in which direction the X reading increases and decreases; do the same for the Y reading.
- 
 **a. Include your accelerometer read-out code in your write-up.**
+I have tried to implement the code with to different arduinos. Unfortunately, I belive the accelerometer is faulty, as both the test code and the code I developed to display the xyz values generate the following output immidiately:
 
+<img src="accelerometer.jpg" width="40%">
+
+[here](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/accelerometer.ino)
 
 ## Part E. Logging values to the EEPROM and reading them back
  
