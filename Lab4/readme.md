@@ -40,7 +40,6 @@ The serial monitor currently shows values between 0-512. Hence, there are 9 ADCs
 <img src="LED RAINBOW.jpg" width="40%">
 
 ## Part C. Resistance & Voltage Varying Sensors 
- 
 
 ### FSR
 
@@ -78,6 +77,7 @@ component of the RGB led to demonstrade the code for simplicity. The link to the
 **a. Include your accelerometer read-out code in your write-up.**
 I have tried to implement the code with to different arduinos. Unfortunately, I belive the accelerometer is faulty, as both the test code and the code I developed to display the xyz values generate the following output immidiately:
 
+<img src="LIS3DH.jpg" width="40%">
 <img src="accelerometer.jpg" width="40%">
 
 [Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/accelerometer.ino)
