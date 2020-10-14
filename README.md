@@ -1,6 +1,6 @@
-## Interactive-Lab-Hub
+# Interactive-Lab-Hub
 
-# Completed Labs for Omer I. 
+## Completed Labs for Omer I. 
 
 1. [Omer I's Lab 1](https://github.com/OiBoii/Interactive-Lab-Hub/tree/master/Lab%201)
 2. [Omer I's Lab 2](https://github.com/OiBoii/Interactive-Lab-Hub/tree/master/Lab2/readme.md)
