@@ -56,8 +56,8 @@ That is, voltage varies inversely to resistance - logarithmically.
 
 **c. In `Examples->Basic->Fading` the RGB LED values range from 0-255. What do you have to do so that you get the full range of output voltages from the RGB LED when using your FSR to change the LED color?**
 
-Yes This could be accomplished using the map() function. In the code linked [here](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/mapFSR_LED.ino)
-component of the RGB led to demonstrade the code for simplicity. The link to the code can be found below.
+Yes, this could be accomplished using the map() function. In the code linked [here](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/mapFSR_LED.ino)
+the RED component of the RGB is mapped to the maximum value. The link to the code can be found below.
 
 **a. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
