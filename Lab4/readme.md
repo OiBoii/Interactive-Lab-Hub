@@ -40,6 +40,7 @@ The serial monitor currently shows values between 0-512. Hence, there are 9 ADCs
 <img src="LED RAINBOW.jpg" width="40%">
 
 ## Part C. Resistance & Voltage Varying Sensors 
+ 
 
 ### FSR
 
@@ -75,9 +76,9 @@ component of the RGB led to demonstrade the code for simplicity. The link to the
 ### Accelerometer
  
 **a. Include your accelerometer read-out code in your write-up.**
+
 I have tried to implement the code with to different arduinos. Unfortunately, I belive the accelerometer is faulty, as both the test code and the code I developed to display the xyz values generate the following output immidiately:
 
-<img src="LIS3DH.jpg" width="40%">
 <img src="accelerometer.jpg" width="40%">
 
 [Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/accelerometer.ino)
@@ -89,17 +90,25 @@ The sample code in `File->Examples->EEPROM` shows functions from the [Arduino EE
 
 **a. Does it matter what actions are assigned to which state? Why?**
 
+Yes. The potentiometer goes through the values continuously. Hence, we have to execute the steps in order (i.e. it wouldn't make much sense to go from WRITE to CLEAR to READ, because there wouldn't be any data to read). 
+
 **b. Why is the code here all in the setup() functions and not in the loop() functions?**
 
-Each character in the string is a byte. That is, it takes 8-bits to encode a character, so the number of characters in the string we are writing is the number of bytes we are occupying in EEPROM. The [Atmega 328P](https://www.microchip.com/wwwproducts/en/atmega328p) at the heart of the Arduino has 1024 bytes of internal [EEPROM](http://en.wikipedia.org/wiki/EEPROM) Memory (which is separate from the 32KB of [Program memory](https://en.wikipedia.org/wiki/Read-only_memory) it has for the code it is running.)
+Because we do not want to repeat the execution of the code more than once.
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
 
+1024 bytes.
+
 **d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
+
+* From analog pins: to get the analog data must divide the 1024 range by 4: 1024/4=256 (or 2^8). That way our range will be mapped between 0-255).
+
+* From I2C devices: We can use the map() function (since each device outputs values in different ranges).
 
 **e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
 
-Modify the code to take in analog values from your sensors and print them back out to the Arduino Serial Monitor.
+The put() function could be used to specify an address for the data to be stored at.
 
 ### 2. Design your logger
 You've been thinking at a high level about a data logger and what it is used for; now you need to adapt that to the specific implementation. 
