@@ -17,30 +17,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 #define LOGO_HEIGHT   16
 #define LOGO_WIDTH    16
 
-//// Used for software SPI
-//#define LIS3DH_CLK 13
-//#define LIS3DH_MISO 12
-//#define LIS3DH_MOSI 11
-//// Used for hardware & software SPI
-//#define LIS3DH_CS 10
-
-// software SPI
-// Adafruit_LIS3DH lis = Adafruit_LIS3DH(LIS3DH_CS, LIS3DH_MOSI, LIS3DH_MISO, LIS3DH_CLK);
-// hardware SPI
-// Adafruit_LIS3DH lis = Adafruit_LIS3DH(LIS3DH_CS);
-// I2C
 Adafruit_LIS3DH lis = Adafruit_LIS3DH();
-
-//void writeToOLED(string info, float num) {
-//  //display.clearDisplay();
-//
-//  display.setTextSize(2);
-//  display.setTextColor(SSD1306_WHITE);
-//  //display.setCursor(0,0);             // Start at top-left corner
-//  display.print(info);
-//
-//  display.display();
-//}
 
 void setup(void) {
   Serial.begin(9600);
