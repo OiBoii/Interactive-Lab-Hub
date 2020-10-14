@@ -119,7 +119,12 @@ You might make changes to your design before this lab is complete.
  
 **a. Turn in a copy of your final state diagram.**
 
+<img src="state diagram.jpg" width="40%">
+
 ## Part G. Create your own data logger!
-Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on your display of choice.
- 
+
+The code reads the state of the LED and initiate the same state on upon reboot.
+
+[VIDEO](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/Data Logger.mp4)
+[Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/logOnOff.ino)
 **a. Record and upload a short demo video of your logger in action.**
