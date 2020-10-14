@@ -125,7 +125,8 @@ You might make changes to your design before this lab is complete.
 
 The code reads the state of the LED and initiate the same state on upon reboot.
 
-[VIDEO](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/Data%Logger.mp4)
-
 [Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/logOnOff.ino)
+
 **a. Record and upload a short demo video of your logger in action.**
+
+[Video](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/Data%20Logger.mp4)
