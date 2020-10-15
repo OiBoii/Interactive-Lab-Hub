@@ -4,7 +4,7 @@
 
 [Make a Box](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab5/makebox.jpg)
 
-[Closed](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab5/closed.jpg)
+[Closed](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab5/close.jpg)
 
 ## Electronics
 [Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab5/JackInABox.ino)
@@ -35,6 +35,6 @@
 ## Summary
 
 * [Final Open Sesame](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab5/finalvideo.mp4)
-* [Closed Box](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab5/closed.jpg)
+* [Closed Box](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab5/close.jpg)
 * [Open Sesame](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab5/open.mp4)
 
