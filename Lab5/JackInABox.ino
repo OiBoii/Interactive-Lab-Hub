@@ -12,8 +12,8 @@
 #define servoPin  10
 #define switchPin 2
 
-#define closePos  10
-#define openPos   110
+#define closePos  0
+#define openPos   180
 
 Servo servo;
 int switchState;
@@ -24,7 +24,9 @@ void ToggleSwitch(int switchState)
 {    
   if (switchState == HIGH)
   {
+    delay(5000);
     servo.write(openPos);
+    delay(5000);
     //Serial.println("switch state is HIGH.  servo.write(openPos) called to open useless box");
   }
   else
