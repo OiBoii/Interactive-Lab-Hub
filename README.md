@@ -7,6 +7,6 @@
 3. [Omer I's Lab 3](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab3/readme.md)
 4. [Omer I's Lab 4](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab4/readme.md)
 5. [Omer I's Lab 5](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab5/readme_lab5.md)
-6. [Omer I's Lab 6](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab5/readme_lab5.md)
+6. [Omer I's Lab 6](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab6/readme.md)
 7. [Omer I's Lab 7](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab5/readme_lab5.md)
 
