@@ -31,7 +31,7 @@ we can access / modify shellsripts using ``nano``
 
 **Include the output of vosk recognizing phrases you taught it to look for.**
 
-![](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab6/vosk.py)
+![](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab6/vosk.jpg)
 
 **Include the listing for a shell script and model files that you use to get vosk to recognize these phrases.**
 
