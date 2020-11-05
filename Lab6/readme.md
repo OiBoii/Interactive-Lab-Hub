@@ -23,13 +23,15 @@ we can access / modify shellsripts using ``nano``
 
 ``['robert california is the lizard king']``
 
+[Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab6/test_words.py)
+
 **How do we use ``vosk`` to recognize words and phrases?**
 
 ``vosk`` is used to recognize speech from a soundbite wav file fed into the kaldi recognizer in bins.
 
 **Include the output of vosk recognizing phrases you taught it to look for.**
 
-![](https://github.com/OiBoii/a/blob/main/vosk.jpg)
+![](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab6/vosk.py)
 
 **Include the listing for a shell script and model files that you use to get vosk to recognize these phrases.**
 
@@ -57,7 +59,7 @@ LED flashes on arduino converting the messages sent from the pi into morse code 
 
 **Program a simple application that understands different basic greetings (for example, Yo!, Good morning! And Good afternoon!) and responds either visibly, physically or auditorially in kind!**
 
-[Code](https://github.com/OiBoii/a/blob/main/password.py)
+[Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab6/password.py)
 
 **Record someone trying out your design**
 
