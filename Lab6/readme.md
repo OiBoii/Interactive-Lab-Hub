@@ -1,23 +1,13 @@
 
 # GreetingBot
 
-
-
-**Look in the RPi image and see where things are at. In specific, see if you can find:**
-
-``The Arduino sketchbook`` -> In Home > Programming > Arduino
-
-``Banana.jpg`` -> Can't find this :(
-
-``Wormy.py`` -> This is the last file in home > pi > python_games
-
 ### Try some Python code on the Pi
 
 Cool games. I had some issues running them because of slow performance.
 
 **How do you know what the shell script is doing?**
 
-we can access / modify shellsripts using ``nano`` 
+we can access/modify shellsripts using ``nano`` 
 
 **Adapt the scripts so that they say what you want them to say.**
 
