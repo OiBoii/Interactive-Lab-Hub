@@ -55,10 +55,11 @@ I decided to have a little fun with it. The program only responds to "sterling a
 
 **Record someone trying out your design**
 
-if the name is sterling archer - your identity is confirmed by the chatbot.
+If the name is Sterling Archer - your identity is confirmed by the chatbot.
 
 [Video](https://drive.google.com/file/d/1fro_dOdYBeOKUaxCuDcNCnNw5YZE4Ui9/view?usp=sharing)
 
+Note that it's really hard to hear the reply because I was not close enought to the speaker. You have to listen carefully at the end!
 
 
 
