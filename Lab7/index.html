@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>RGB Controller</title>
+<script src="static/socket.io.js">
+<script type="text/javascript" charset="utf-8">
+    var socket = io();
+    socket.on('connect', function() {
+        socket.emit('my event', {data: 'I\'m connected!'});
+    });
+</script>
+<!--        <script src="/socket.io/socket.io.js"></script>-->
+        <script src="static/client.js"></script>
+    </head>
+    <body>
+        <body bgcolor="#000">
+        <button onclick="ledRED()">LED RED</button>
+        <button onclick="ledBLUE()">LED BLUE</button>
+        <button onclick="ledGREEN()">LED GREEN</button>
+        <button onclick="ledOFF()">LED OFF</button>
+	<br>
+    </body>
+    <audio id="doorbell", loop="false", volume="60", duration=2>
+        <source src="https://www.soundjay.com/door/doorbell-6.mp3" type="audio/mp3">
+    </audio>
+</html>
