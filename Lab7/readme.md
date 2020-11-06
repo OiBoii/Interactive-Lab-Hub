@@ -3,7 +3,7 @@
 
 **Customize the code enough that the webpage served up is clearly your own, and include a screenshot and any modified code in the lab folder.**
 
-<img src = "https://github.com/OiBoii/a/blob/main/My%20Webpage.jpg" width=75%>
+<img src = "https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/My%20Webpage.jpg>
 
 ## Set up and Run Interaction Engine
 ### Flash the HelloYou Sketch onto the Arduino
@@ -61,12 +61,13 @@
 * Bbutton is clicked
 
 ## Video doorbell
-<img src=https://github.com/OiBoii/a/blob/main/video_feed.gif>
 
+* [Index HTML](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/VideoFeed.py)
+<img src=https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/video_feed.gif>
 
 ## Extra Wireless RGB Controller
 
-* [RGB CODE](https://github.com/OiBoii/a/blob/main/index.html)
-* [Index HTML](https://github.com/OiBoii/a/blob/main/index.html)
+* [RGB CODE](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/wirelessRGB.ino)
+* [Index HTML](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/index.html)
 
 <img src=https://github.com/OiBoii/a/blob/main/rgb_gif.gif>
