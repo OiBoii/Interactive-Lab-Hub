@@ -62,7 +62,7 @@
 
 ## Video doorbell
 
-* [Index HTML](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/VideoFeed.py)
+* [Video Feed Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/VideoFeed.py)
 <img src=https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/video_feed.gif>
 
 ## Extra Wireless RGB Controller
