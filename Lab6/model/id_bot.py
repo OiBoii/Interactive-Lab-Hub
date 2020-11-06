@@ -39,7 +39,7 @@ while True:
 
       model = Model("model")
       # You can also specify the possible word list
-      rec = KaldiRecognizer(model, wf.getframerate(), "hi hello hey how [unk]")
+      rec = KaldiRecognizer(model, wf.getframerate(), "sterling")
 
       while True:
           data = wf.readframes(4000)
@@ -47,13 +47,11 @@ while True:
           if len(data) == 0:
               break
       words = json.loads(rec.FinalResult())['text']
-      print("WORDS:",words)
-      if("how" in words):
-          print("I'm well, and you?")
-          call(["aplay","inquiry.wav"])
-      elif("hi" in words or "hello" in words):
-          print("Well, hello!")
-          call(["aplay","greeting.wav"])
+      print(words)
+      if("sterling" in words):
+          print("you are the world's greatest secret agent!")
+          call(["aplay","id_confirmed.wav"])
+      continue
 
    except KeyboardInterrupt:
       ser.close()
