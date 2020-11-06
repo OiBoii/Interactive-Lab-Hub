@@ -57,7 +57,7 @@ I decided to have a little fun with it. The program only responds to "sterling a
 
 if the name is sterling archer - your identity is confirmed by the chatbot.
 
-[Video](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab6/model/id_bot.py)
+[Video](https://drive.google.com/file/d/1fro_dOdYBeOKUaxCuDcNCnNw5YZE4Ui9/view?usp=sharing)
 
 
 
