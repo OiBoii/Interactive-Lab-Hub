@@ -51,13 +51,13 @@ LED flashes on arduino converting the messages sent from the pi into morse code 
 
 I decided to have a little fun with it. The program only responds to "sterling archer" - the world's greates secret agent!]
 
-[Code](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab6/id_bot.py)
+[id_bot.py](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab6/model/id_bot.py)
 
 **Record someone trying out your design**
 
 if the name is sterling archer - your identity is confirmed by the chatbot.
 
-[Video](https://drive.google.com/drive/u/0/my-drive)
+[Video](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab6/model/id_bot.py)
 
 
 
