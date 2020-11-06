@@ -29,7 +29,7 @@ void loop() {
   if (buttonState != newState) {
     buttonState = newState;
     if(buttonState == HIGH){
-      Serial.println("Hi");
+      Serial.println("Who's there?");
     }
   }
 }
