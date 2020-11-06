@@ -3,7 +3,7 @@
 
 **Customize the code enough that the webpage served up is clearly your own, and include a screenshot and any modified code in the lab folder.**
 
-<img src = "https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/My%20Webpage.jpg">
+<img src = "https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/My%20Webpage.jpg>
 
 ## Set up and Run Interaction Engine
 ### Flash the HelloYou Sketch onto the Arduino
@@ -70,4 +70,4 @@
 * [RGB CODE](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/wirelessRGB.ino)
 * [Index HTML](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/index.html)
 
-<img src=https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/wirelessRGB.ino>
+<img src=https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Lab7/rgb_gif.gif>
