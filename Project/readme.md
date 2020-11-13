@@ -12,15 +12,13 @@ It is important to note that MIDI in itself is NOT a soundwave, nor a musical si
 
 Here is an example of what a simlpe MIDI controller.
 
-<img src="prototype.jpg">
-
+<img src="fritz.jpg" style="width:200px;"/>
 
 ### DIAGRAM 
-
-<img src="diagram.jpg">
+<img src="diagram.jpg" style="width:200px;"/>
 
 ## COMPONENTS
-<img src="components.jpg">
+<img src="components.jpg" style="width:500px;"/>
 
 
 # State 
