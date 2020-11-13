@@ -15,7 +15,7 @@ Here is an example of what a simlpe MIDI controller.
 <img src="fritz.jpg" style="width:100px;"/>
 
 ### DIAGRAM 
-<img src="diagram.jpg" style="width:100px;"/>
+<img src="diagram.jpg" style="width:50%;"/>
 
 ## COMPONENTS
 <img src="components.jpg" style="width:500px;"/>
