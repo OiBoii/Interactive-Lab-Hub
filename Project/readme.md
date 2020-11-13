@@ -36,7 +36,7 @@ Update: found a location for the switch button!
 
 I did not intend ot uplpad any pictures of the cardboard prototype to the repo because it was not the most elegant process of trial and error for me. But from the pictures I took with my phone I noticed my left (non-dominant) hand was resting on the left side of the box. I did it subconciously to hold the box in place when I was trying to pretend to play the push buttons. Noenetheless, after seeing that, it occured to me that this was the most natural position for it because I consistently placed my prototype to the right of my monitor so I could control it with my right hand. That assigned my left hand with the task of traveling between the keyboard and the device (I fully committed to play pretend here, imagining I was actually going through the motinons of uploading different synths and watching the feedback on the screen). Which is why, I now know where to put the switch button!
 
-<img src="components.jpg" width=500px>
+<img src="hand.jpg" width=500px><img src="switch.jpg" width=500px>
 
 ### COMPONENTS
 
