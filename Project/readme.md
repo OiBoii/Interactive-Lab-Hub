@@ -8,12 +8,17 @@ MIDI (Musical Instrument Digital Interface) is a communication standard that all
 
 ### HOW IT WORKS
 
-It is important to note that MIDI in itself is NOT a soundwave, nor a musical signal of any sort! It is simply a numeric representation of an action - a hardware interrupt. It could be programmed to include a wide spectrum of properties - for example, vibration to emulate a guitar string being strummed on a synthesizer. However, at it's core, it could be a simple push of a button. The sound that is generated is not coming from the MIDI signal, the signal is converted to a MIDI instruction before its transmitted to the software, and that MIDI software is responsible to convert this instruction into sound. The controller is connected to the software via serial communication in this project. 
+It is important to note that MIDI in itself is NOT a soundwave, nor a musical signal of any sort! It is simply a numeric representation of an action - a hardware interrupt. It could be programmed to include a wide spectrum of properties - for example, vibration to emulate a guitar string being strummed on a synthesizer. However, at it's core, it could be a simple push of a button. The sound that is generated is not coming from the MIDI signal, the signal is converted to a MIDI instruction before its transmitted to the software, and that MIDI software is responsible to convert this instruction into sound. The controller is connected to the software via serial communication in this project.
 
-Hence it is very simlpe to create a working prototype of a MIDI controller. 
+Here is an example of what a simlpe MIDI controller.
+
 <img src="prototype.jpg">
 
-### STATE DIAGRAM 
+
+### DIAGRAM 
+
+<img src="diagram.jpg">
+
 ## COMPONENTS
 <img src="components.jpg">
 
