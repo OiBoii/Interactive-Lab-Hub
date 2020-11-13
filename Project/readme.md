@@ -53,10 +53,11 @@ Even though I wouldn't have had to buy a multiplexer had I gone with the teensy 
 
 ### DIGITAL PROTOTYPING
 
-The cad designs are coming soon as well. I first need to determine where to place the switch button.
+The cad designs are coming soon. I started working on them based on the compnents specs.
 
 ## CIRCUIT DESIGN
 * comming soon
+
 ## CODE
 * coming soon
 
