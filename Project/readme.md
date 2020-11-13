@@ -17,7 +17,7 @@ It is important to note that MIDI in itself is NOT a soundwave, nor a musical si
 ## EXPERIMENTING
 
 ### SIMPLEST FORM
-Here is an example of what a simlpe MIDI controller.
+For the sake of visualization - here is an example of what a *very simlpe* MIDI controller could look like.
 
 <img src="fritz.jpg" width=250PX>
 
