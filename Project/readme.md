@@ -18,7 +18,7 @@ Here is an example of what a simlpe MIDI controller.
 <img src="diagram.jpg" style="width:50%;"/>
 
 ## COMPONENTS
-<img src="components.jpg" style="width:500px;"/>
+<img src="components.jpg" width=500px>
 
 
 # State 
