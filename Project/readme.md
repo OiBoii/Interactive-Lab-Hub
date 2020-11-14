@@ -51,9 +51,8 @@ I found [this](https://www.solidsmack.com/cad/model-week-staal3d-midi-controller
 
 * **The Micro Controller:** I looked for a class compliant MIDI chip (plug & play enabled). In other words, the controller cpould be directly connected to the computer without requiring an interface at all. Both the Teensy board and the Arduino Pro Micro were considered. 
 Even though I wouldn't have had to buy a multiplexer had I gone with the teensy board (since it has 25 input pins - exactly as much as I need). I opted for an Arduino Pro Micro (18 input pins) + Multiplexer because there is simply much more resources available for it. 
-* **Lights:** I chose the RGB LED strips because they would be much more convinient to use without a breadboard.
-* **Buttons:** I originally thought to 
-
+* **Lights:** I chose the RGB LED strips because they would be much more convinient to use without a breadboard. 
+* **Buttons:** 16 transparent arcade buttons for the top plate + one on the side. The buttons don't have to be entirely clear, but it is important that they are at least somewhat seathrough so that the LED lights could be seen. This is important not just for decorative purposes - it is also crucial because the light is going to indicate the type of feedback the button is providing (on click, continuous output, etc.)
 
 ## CIRCUIT DESIGN
 * comming soon
