@@ -13,7 +13,6 @@ MIDI (Musical Instrument Digital Interface) is a communication standard that all
 
 It is important to note that MIDI in itself is NOT a soundwave, nor a musical signal of any sort! It is simply a numeric representation of an action - a hardware interrupt. It could be programmed to include a wide spectrum of properties - for example, vibration to emulate a guitar string being strummed on a synthesizer. However, at it's core, it could be a simple push of a button. The sound that is generated is not coming from the MIDI signal, the signal is converted to a MIDI instruction before its transmitted to the software, and that MIDI software is responsible to convert this instruction into sound. The controller is connected to the software via serial communication in this project.
 
-
 ## EXPERIMENTING
 
 ### SIMPLEST FORM
@@ -39,8 +38,14 @@ I am very happy that I did not skip that part of the experimentation because I r
 * **Location of the potentiometers:** I immidiately found out that I wanted to leave space for some of the potentiometers on the top of the box. Since they have a higher profile then all the other components, it wouldn't make much sens to place them closer to me as they would obstruct the push buttons array. This way they will also be accessible to be controlled with both my hands.
 
   * **Update:**   After I realized I wanted to use 8 potentiometers instead of 4, I could'nt determine whether I wanted them to be on left or the right side of the arcade push buttons array. I initially thought it would be less comfortable for me to use my left hand to control them, but then I realized it wouldn't make much sense to put them on the right side because that would delegate to much responsibility to my right hand. For sanity check, I looked at many other designs and confirmed that this was indeed the case - more often than not, knobs and sliders were placed to the left of the keys.
-  
-### COMPONENTS
+ 
+### DIGITAL PROTOTYPING
+
+I found [this](https://www.solidsmack.com/cad/model-week-staal3d-midi-controller-everbody-midi-fightin) beautiful CAD design online. I am going to make some modifications to it and upload them as soon as possible.
+<img src="cad.jpg" width=500px>
+
+
+## COMPONENTS
 
 <img src="components.jpg" width=500px>
 
@@ -48,13 +53,6 @@ I am very happy that I did not skip that part of the experimentation because I r
 Even though I wouldn't have had to buy a multiplexer had I gone with the teensy board (since it has 25 input pins - exactly as much as I need). I opted for an Arduino Pro Micro (18 input pins) + Multiplexer because there is simply much more resources available for it. 
 * **Lights:** I chose the RGB LED strips because they would be much more convinient to use without a breadboard.
 * **Buttons:** I originally thought to 
-
-
-
-### DIGITAL PROTOTYPING
-
-I found [this](https://www.solidsmack.com/cad/model-week-staal3d-midi-controller-everbody-midi-fightin) beautiful CAD design online. I am going to make some modifications to it and upload them as soon as possible.
-<img src="cad.jpg" width=500px>
 
 
 ## CIRCUIT DESIGN
