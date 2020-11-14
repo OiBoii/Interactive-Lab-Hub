@@ -53,9 +53,9 @@ Even though I wouldn't have had to buy a multiplexer had I gone with the teensy 
 
 ### DIGITAL PROTOTYPING
 
-I found [t]("https://www.solidsmack.com/cad/model-week-staal3d-midi-controller-everbody-midi-fightin") beautiful CAD design online. I am going to make some modifications to it and upload them as soon as possible.
-
+I found [this](https://www.solidsmack.com/cad/model-week-staal3d-midi-controller-everbody-midi-fightin) beautiful CAD design online. I am going to make some modifications to it and upload them as soon as possible.
 <img src="cad.jpg" width=500px>
+
 
 ## CIRCUIT DESIGN
 * comming soon
