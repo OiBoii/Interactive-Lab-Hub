@@ -19,8 +19,7 @@ I made the device way too tall and top heavy (since most of the component are bu
 I did not realize that by mounting things on the bottom and the top of the device I wont be able to 
 
 ## FULL DISCLOSURE
-There are many implementations and DIY guides out there explaining in detail how to make your own midi controller. So some of the content is here 
-## HOW IT WORKS?
+There are many implementations and DIY guides out there explaining in detail how to make your own midi controller. So some of the content here is obtained from different sources on the web. However, the main person to help me iterate through the design process was a friendly Youtube channel owner that made some tutorials about how to make midi controllers. He specifically asked me NOT to link his channel because he is not interested in starting to get messages from people on a regular basis. To qupte his words - " I am always happy to help when people ask for my advice, however, I would'nt want to publically volunteer this information so to not get overwhelemd with every little question someone might have, if that makes sense? If you do post these anywhere, please DO NOT link my channel! You can just say - "Thank you nerDIYmusic" and I'll know what that means. so here it is - **Thank you for the help NerDIYMusician** for your help with the enclosure design and code - it was fun! 
 
 ### DIAGRAM 
 <img src="diagram.jpg" width=500px>
@@ -69,7 +68,7 @@ Even though I wouldn't have had to buy a multiplexer had I gone with the teensy 
 * **Buttons:** 16 transparent arcade buttons for the top plate + one on the side. The buttons don't have to be entirely clear, but it is important that they are at least somewhat seathrough so that the LED lights could be seen. This is important not just for decorative purposes - it is also crucial because the light is going to indicate the type of feedback the button is providing (on click, continuous output, etc.)
 
 ## CIRCUIT DESIGN
-th
+This circuit is incredibally simple. an````````` arduino microcontroller to control the potentiometers and side-button. Then coupled it with a multiplexer to connect all 16 buttons to the ANALOG pins 
 ## BREADBOARD PROTOTYPE DESIGN
 
 ## CODE
