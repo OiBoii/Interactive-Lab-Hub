@@ -68,9 +68,32 @@ Even though I wouldn't have had to buy a multiplexer had I gone with the teensy 
 * **Buttons:** 16 transparent arcade buttons for the top plate + one on the side. The buttons don't have to be entirely clear, but it is important that they are at least somewhat seathrough so that the LED lights could be seen. This is important not just for decorative purposes - it is also crucial because the light is going to indicate the type of feedback the button is providing (on click, continuous output, etc.)
 
 ## CIRCUIT DESIGN
-This circuit is incredibally simple. an````````` arduino microcontroller to control the potentiometers and side-button. Then coupled it with a multiplexer to connect all 16 buttons to the ANALOG pins 
+
+This circuit is incredibly simple (or so I thought). Here is the pin layout:
+### PRO MICRO 
+* Potentiometers: X8 Analog Pins (A0-A3 & 6-9)
+* Side Pushbutton: X1 Digital Pin (3)
+* 16-LED Strips: X1 Analog Pin (5)
+### Arduino - Multiplexer 
+ArduinoPin-MultiplexerPin     
+  * Digital Pin 2 - S0
+  * Digital Pin 15 (SCLK) - S1
+  * Digital Pin 16 (MOSI) - S2
+  * Digital Pin 14 (MISO) - S3
+  * Digital Pin 10 - SIG
+  
+### MULTIPLEXER
+* 16 Push-Buttons: X16 Digital Pins (C0-C15)
+* Enable was connected with ground 
+
+## FRITZING SCHEMATIC 
+
+
+<img src="cad.jpg" width=500px>
+**Note:** There original design called for resistors but I decided to not include them and integrate 
 ## BREADBOARD PROTOTYPE DESIGN
 
+## NOT
 ## CODE
 
 ## FINAL DESIGN
