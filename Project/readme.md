@@ -6,6 +6,20 @@ For the final project I am going to create my own midi controller to create musi
 
 MIDI (Musical Instrument Digital Interface) is a communication standard that allows digital music gear to speak the same language. A MIDI controller is a device capable of transmitting and recieving these MIDI messages, allowing direct control over mixing programs. Buttons on MIDI controllers are programmable and could be mapped to perform many different functions to optimize workflow or produce different sounds. 
 
+## WHY A MIDI CONTROLLER?
+The reason I chode to work on this project is simple. I was more inThis is an **Interactive** Device design class - I took circuits classes before and have done my fair share of microcontroller programming projects, but it was all done with breadboard . I was more interested in creating a good design rather than a complicated circuit and complex code. I did a large portion of the research on understanding the funcitons of a MIDI controller and its different compononent. The bulk of this project was understanding the design process of a product that is intuitive to use. 
+
+## INTERESTING KEY LEARNINGS
+That engineers take a lot of things for granted when it comes to design. We often blame ourselves when we can't seem to figure our how to use certain devices. However in reality - it's probably the designer's fault. Which was a very eye openeing concept for me. My first few physical prototypes of the device (NOT the circuit - the enclosure), were fairly simple, but also not informative enough. Most prototypes were recorded, and notes were taken to document how organically the process came through at together at the end.
+
+I didn't consider the travel distance between the buttons
+I didn't realize that putting an *ON/OFF* button on the device would be *confusing* to people since the device coud only work when it's *plugged to a computer directly*. In reality when I put a push button for on and off pthe two people that i tested said they percieved the usb port as something that is used to insert content or store data on the device rather than power it.
+
+I made the device way too tall and top heavy (since most of the component are buttons they were mounted at the top).
+I did not realize that by mounting things on the bottom and the top of the device I wont be able to 
+
+## FULL DISCLOSURE
+There are many implementations and DIY guides out there explaining in detail how to make your own midi controller. So some of the content is here 
 ## HOW IT WORKS?
 
 ### DIAGRAM 
@@ -55,11 +69,13 @@ Even though I wouldn't have had to buy a multiplexer had I gone with the teensy 
 * **Buttons:** 16 transparent arcade buttons for the top plate + one on the side. The buttons don't have to be entirely clear, but it is important that they are at least somewhat seathrough so that the LED lights could be seen. This is important not just for decorative purposes - it is also crucial because the light is going to indicate the type of feedback the button is providing (on click, continuous output, etc.)
 
 ## CIRCUIT DESIGN
-* comming soon
+th
+## BREADBOARD PROTOTYPE DESIGN
 
 ## CODE
-* coming soon
 
+## FINAL DESIGN
+Conclusion - Continuoity check was done, and similar code was uploaded 
+## ISSUES
 
-
-
+## FUTURE WORK (WINTER BREAK)
