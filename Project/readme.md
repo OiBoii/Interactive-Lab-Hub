@@ -194,7 +194,8 @@ I unfortunately have to come to the conclusion that I need to take it apart in o
 
 ### CURRENT STATUS
 The device is recognized as midi input by FL STUDIOS but doesn't produce a sound
-
+LEDs don't respnd to push buttons (makes sense be cause input isn't being read)
+<img src="gif.gif" width=500px>
 
 ### ISSUES
 I know I dont have a proof of that but the device did work for like 5 seconds when I moved it from my lap to my desk. It was as if conncections were unstable but
