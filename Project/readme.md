@@ -25,10 +25,10 @@ This would be a 25 page paper if just talked about all the mistakes I made on th
 There are many implementations and DIY guides out there explaining in detail how to make your own midi controller. So some of the content here is obtained from different sources on the web. However, the main person to help me iterate through the design process was a friendly Youtube channel owner that made some tutorials about how to make midi controllers. He specifically asked me NOT to link his channel because he is not interested in starting to get messages from people on a regular basis. To qupte his words - " I am always happy to help when people ask for my advice, however, I would'nt want to publically volunteer this information so to not get overwhelemd with every little question someone might have, if that makes sense? If you do post these anywhere, please DO NOT link my channel! You can just say - "Thank you nerDIYmusic" and I'll know what that means. so here it is - Thank you for the help **NerDIYMusician** for your tips with the enclosure design and code - it was fun! 
 
 ### DIAGRAM 
+It is important to note that MIDI in itself is NOT a soundwave, nor a musical signal of any sort! It is simply a numeric representation of an action - a hardware interrupt. It could be programmed to include a wide spectrum of properties - for example, vibration to emulate a guitar string being strummed on a synthesizer. However, at it's core, it could be a simple push of a button. The sound that is generated is not coming from the MIDI signal, the signal is converted to a MIDI instruction before its transmitted to the software, and that MIDI software is responsible to convert this instruction into sound. The controller is connected to the software via serial communication in this project.
 
 <img src="diagram.jpg" width=500px>
 
-It is important to note that MIDI in itself is NOT a soundwave, nor a musical signal of any sort! It is simply a numeric representation of an action - a hardware interrupt. It could be programmed to include a wide spectrum of properties - for example, vibration to emulate a guitar string being strummed on a synthesizer. However, at it's core, it could be a simple push of a button. The sound that is generated is not coming from the MIDI signal, the signal is converted to a MIDI instruction before its transmitted to the software, and that MIDI software is responsible to convert this instruction into sound. The controller is connected to the software via serial communication in this project.
 
 ## FORM FACTOR RESEARCH
 
@@ -38,34 +38,47 @@ For the sake of visualization - here is an example of what a *very simlpe* MIDI 
 <img src="fritz.jpg" width=500px>
 
 ### COMMERCIAL FORM 
-
-<img src="novation.jpg" width=500px>
-
 The golden standard of MIDI Controllers is the Novation Launch Pad. An expensive yet functional device. There is an Adafruit tutorial that teaches you how to build one. But, I was hoestly a bit dicouraged by it. Especially since there are  ready-to-go kits you can order to make it. (Not to take away anything from the complexity of the process - I just felt like bein a little more creative). The cool takeaway from this design is the **feedback from the LED lights** . I really loved watching videos of people playing that thing - it's intriuing just because of the lights alone! I thought it would be cool to implement a similar feedback using the FastLED arduino library.
 Also, as someone who never played a MIDI Controller - the layout was a bit overwhelming to look at. There were simply too many buttons! I decided to make a smaller version of that.
 
-# DIY FORM
+<img src="novation.jpg" width=500px>
+
+
+
+### DIY FORM
+Now that's were I truly started getting excited - people make that with arcade push buttons! Yes! I was a 90's kid, and I grew up playing arcade games and love the way they feel and sound. I decided I am definitely going to use them over the silicone buttons on the Novation lauchpad. 
+Note: the buttons were by far the most expensive part of the design (definitely worth it though). Since, I wanted the buttons to be able to see light coming through the buttons, I had to order ones with transparent rim.
 
 <img src="cad.jpg" width=500px>
 
-Now that's were I truly started getting excited - people make that with arcade push buttons! Yes! I was a 90's kid, and I grew up playing arcade games and love the way they feel and sound. I decided I am definitely going to use them over the silicone buttons on the Novation lauchpad. 
-This was by far the most expensive part of the product (definitely worth it though). I wanted the buttons to have a see through time so that the light could be seen through it. 
-
-## EXPERIMENTING
+## PROTOTYPING
 
 ### PAPER PROTOTYPING 
 
-#### 2D PROTOTYPING 
-
 **sketches** I made a lot of sketches and drew a lot of inspiration from existing sources online. I just sketched as many as I could wthout thinking (it doesn't look great) but here is an example
 
-<img src="fritz.jpg" width=500px>
+<img src="sketches.jpg" width=500px>
 
 **Choosing a layout** After that I made a first a attempt at drawing something that made sense to me. Then I wrote down some instructions I was uncertain if people will naturally understand how to do. I asked 4 different people to do basic things with the prototype and noted what they did wrong. 
 
-<img src="fritz.jpg" width=500px>
+<img src="test.jpg" width=500px>
 
 **Testing a prototype** People performed all the right actions except one! All of the totally ignored the USB (at the top) and tried to turn the machine off simply by pressing the on/off button at the top right corner. So, I had to find a better way to go about it. 
+
+## BREADBOARD PROTOTYPE DESIGN
+
+No issues here! the prototype includes an array 4 buttons (1 line from the array) and 4 potentiometers 
+Code:
+Fritzing Schematic:
+Picture circuit:
+Video:
+
+**Takeaways:** 
+* Circuit and code work!
+* need to extend the code if interested in using multiple banks of instruements in parallel
+* software may take a bit to get used to
+
+#### 2D PROTOTYPING 
 
 **Too Simple** I really never played a MIDI controller, but one day at the maker lab I saw a MIDI controller tin the form of a piano. I thought about it for a second and then I realized that I don't think I have seen an example of a 3X3 controller - which would make sense! there are 12 keys on a piano, and it would be weird to design an instrument that cannot be mapped to all the notes at once. So I decided to make the array a 4X4 (or a 3X4 at the very least) and increase the numbers of potentiometers.
 
@@ -102,13 +115,7 @@ Even though I wouldn't have had to buy a multiplexer had I gone with the teensy 
 * **Lights:** I chose the RGB LED strips because they would be much more convinient to use without a breadboard. 
 * **Buttons:** 16 transparent arcade buttons for the top plate + one on the side. The buttons don't have to be entirely clear, but it is important that they are at least somewhat seathrough so that the LED lights could be seen. This is important not just for decorative purposes - it is also crucial because the light is going to indicate the type of feedback the button is providing (on click, continuous output, etc.)
 
-## BREADBOARD PROTOTYPE DESIGN
 
-Mkaing this was a breeze. the prototype includes an array 4 buttons (1 line from the array) and 4 potentiometers 
-Code:
-Fritzing Schematic:
-Picture circuit:
-Video:
 
 ## CIRCUIT DESIGN
 This circuit is incredibly simple (or so I thought). Here is the pin layout:
