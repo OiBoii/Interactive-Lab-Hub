@@ -180,6 +180,10 @@ ArduinoPin-MultiplexerPin
 ## HARDWARE 
 
 Full Circuit:
+<img src="circuit.jpg" width=500px>
+
+Video @ Demonstration - unstable midi output + only one LED light turns on:
+
 
 ### BEST STATUS
 I have no proof of that because it was very brief (less then 20 seconds) but the device would light up and interface with FL Studios to profuce a sample - **however it did that only when I flipped it upsidedown** and I can't replicate it
@@ -200,14 +204,20 @@ As mentioned. I was able to create a mini version of this citcuit rather easily.
 3) I probably soldered over 500 connections together and that could take a real ohysical toll on the hand. I burnt myself multiple times because I was just so fatigued from working with the soldering iron that I may have soldered the wrong connections (though I have done a continuity check and npthing was seemed to be shorted). The quality of the wires certainly didn't help here as they kept ripping with the slitest adjustaments.
 4) The arrows on the RGB LED strips were pointing the wrong way! so only one light turned on (because I connected them from the end of the strip rather than the begining. It's fixed now, but I am out of solder at the moment and can't attach all 16 of them together.
 
-## FUTURE WORK (WINTER BREAK)
-I fully intend to develop this documentation over the course of the winter break and design a pcb for this device. I will keep you posted!
-
 ## SOFTWARE
 This is the code I made in partneship with NerDIY - I have no way to know whether or not this code is fully working because I never actually implemnted the full scope of the design on a breadboard - because that would be a whole lot of breadboard to cover. 
 However, I can confidently say that all the different portions of the code were tested and are worked on a smaller scale.
 The Code:
 
+## FUTURE WORK (WINTER BREAK)
+I fully intend to develop this documentation over the course of the winter break and design a pcb for this device. I will keep you posted!
+
+
+
 ## GALLERY
+
+<img src="glry3.jpg" width=500px>
+<img src="glry2.jpg" width=500px>
+<img src="glry1.jpg" width=500px>
 
 
