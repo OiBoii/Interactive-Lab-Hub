@@ -183,7 +183,7 @@ ArduinoPin-MultiplexerPin
 Full Circuit:
 <img src="circuit.jpg" width=500px>
 
-Video @ Demonstration - unstable midi output + only one LED light turns on:
+Video @ Demonstration - unstable MIDI output + only one LED light turns on:
 
 
 ### BEST STATUS
@@ -211,7 +211,8 @@ As mentioned. I was able to create a mini version of this citcuit rather easily.
 ## SOFTWARE
 This is the code I made in partneship with NerDIY - I have no way to know whether or not this code is fully working because I never actually implemnted the full scope of the design on a breadboard - because that would be a whole lot of breadboard to cover. 
 However, I can confidently say that all the different portions of the code were tested and are worked on a smaller scale.
-The Code: [OiBoi!](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Project/TheOiBoi.ino)
+
+**The Code:** [OiBoi!](https://github.com/OiBoii/Interactive-Lab-Hub/blob/master/Project/TheOiBoi.ino)
 
 ## FUTURE WORK (WINTER BREAK)
 I fully intend to develop this documentation over the course of the winter break and design a pcb for this device. I will keep you posted!
