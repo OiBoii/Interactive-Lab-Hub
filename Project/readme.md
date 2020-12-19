@@ -154,6 +154,7 @@ Video:
 
 
 ### FRITZING SCHEMATIC  
+
 After going through a breezy tutorial and desiging a mini circuit I was confident I'd have no problem executing the full version. I should have given myselg less credit. but I will get to that later. I read a few articles and found some solid DIY tutorials, and came out with this circuit.
 
 <img src="fritzing diagram.jpg" width=500px>
@@ -189,12 +190,14 @@ Video @ Demonstration - unstable midi output + only one LED light turns on:
 I have no proof of that because it was very brief (less then 20 seconds) but the device would light up and interface with FL Studios to profuce a sample - **however it did that only when I flipped it upsidedown** and I can't replicate it
 
 ### DEBUGGING
-I performed a continuity and tested portions of the code on parts of the circuit and nothing was out of the ordinary. 
-I unfortunately have to come to the conclusion that I need to take it apart in order to make this work at that point - which is very upsetting but I fully intend to do it over the winter break
+* I performed a continuity test
+* Tested portions of the code on parts of the circuit and nothing was out of the ordinary. 
+* I unfortunately have to come to the conclusion that I need to take it apart in order to make this work at that point - which is very upsetting but I fully intend to do it over the winter break
 
 ### CURRENT STATUS
 The device is recognized as midi input by FL STUDIOS but doesn't produce a sound
 LEDs don't respnd to push buttons (makes sense be cause input isn't being read)
+
 <img src="gif.gif" width=500px>
 
 ### ISSUES
@@ -208,7 +211,7 @@ As mentioned. I was able to create a mini version of this citcuit rather easily.
 ## SOFTWARE
 This is the code I made in partneship with NerDIY - I have no way to know whether or not this code is fully working because I never actually implemnted the full scope of the design on a breadboard - because that would be a whole lot of breadboard to cover. 
 However, I can confidently say that all the different portions of the code were tested and are worked on a smaller scale.
-The Code:
+The Code: [LINK]
 
 ## FUTURE WORK (WINTER BREAK)
 I fully intend to develop this documentation over the course of the winter break and design a pcb for this device. I will keep you posted!
