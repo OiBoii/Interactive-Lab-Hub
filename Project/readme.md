@@ -108,27 +108,33 @@ That was almost the final design. Again, most of these are just component measur
 <img src="acrylic_top.jpg" width=500px>
 <img src="bottom.jpg" width=500px>
 
-Things were really starting to come together at this point! That is not the first prototype, but also not the last!
+I used CNC machining to laser cut the prototypes at this point. I was using scraps from the MakerLab, but many pieces were a tad too small so, I decided to shrink the model 50% just to see how it looks. harmless right? well potentially. It did cause some issues for me down the road. But I am so glad I did that, becase It tought me to pay attention to things I wouldn't otherwise notice.
+
+I couldn't figure out why it was so difficult to fit the parts together - I scaled everything together and I just didn't understand why this was happening with a template I found online that had thousands of positive reviews. I looked at the printing measurements and they seemed fine. Something had to fit no? Yet, there I was in the MakerLab, and I couldn't find anything that would fit aside from some thin wood veneers. I had to smoosh the cardboards with my boots to make it fit - and even then, it barely did. It took me a second, but I finally realized - of course nothing fits they were! I scaled everything down by 50% without accouting for the thickness of the material I was using - so the slots were so much smaller than they would be in the real size model.
+
+Things were coming together real nicely from a design perspective though!
 
 <img src="cardboard.jpg" width=500px>
 
+### FINAL ENCCLOSURE
+
 **OOPS** 
 
-I used CNC machining at that point. but since I was using scraps from the maker lab that I didn't pay for myself, I wanted to avoid being wastefull. Since the actual form factor for the device wwas about 7"X7" - I decided to make it smaller and print 'baby' models until I am almost certain of the device I want - and boy dud that causing me issues down the road!
+When the buttons and the rest of the components arrived (I ordered white acrylic to print the enclosure since I thought it would look nice with the RGB LEDs). I went to the make lab and was eager to start cutting the material. After testing the printer on a cardboard again, I realized I accidentally saved the file last time when I scaled it, so I had to scale it up again. I SHOULD HAVE printed a real size cardboard prototype at this point but didn't have a lot of time that day, so I skipped the full size cardboard print and moved right on to use the material so I could pu some things together at home. OOPS! 
 
-I couldn't figure out why it was so difficult to fit the parts together - I scaled everything together and I just didn't understand why this was happening with a template I found online that had thousands of positive reviews. I looked at the printing measurements and they seemed fine. The template was created for 3mm boards, yet there I was in the makerlab, and I couldn'y find anything that would fit aside from some thin wood veneers. I had to smoosh the cardboards with my boots to make it fit - and even then, it barely did. It took me a second, but I finally realized - of course nothing fits they were! I scaled everything down by 50% without accouting for the thickness of the material I was using - so the slots were so much smaller than theu would be in the real size model.
+<img src="white.jpg" width=500px>
 
-**A BIGGER OOPS**
+I don't know what happened, but I think I somehow rounded the numbers after scaling them - which resulted in the holes I made for the buttons being too large! it wasn't a problem for the potentiometerssi nce I used wahers to mount them anyway, but the push buttons just slid right through! 
 
-I had just ordered the components when when I was prototyping that day, so I didn't have the physical push buttons to test on a real sized model, and I figured why bother at that time. I'll just wait untill I have them... that caused some drama for me later on. that actually worked out to my benegit but ill get to that later!
+**ANOTHER OOPS** 
+I almost ordered another shipment of white acrylic but really wanted to start tweaking the circuit (since I knew I had a very busy schedule in the next few weeks). So I decided to sacrifice some beauty by using material from the maker lab. I found a light blue transparent acrylic sheet and cut it with the right hole measuremeants that I needed. after installing the components together I realized, that the box template I was using was really not working for me. The notches on the top of the box were sticking out too far out and it was uncomforable to use. Only when I stacked both plates on top of the notches they seemed to be propery surfaced. 
 
-### FINAL ENCCLOSURE
-when the buttons and the rest of the components arrived (I ordered white acrylic to print the enclosure since I thought it would look nice with the RGB LEDs). Iwent to the make lab and was eager to start cutting the material. After testing the printer on a cardboard again, I realized I accidentally saved the file last time when I scaled it, so I had to scale it up again. I SHOULD HAVE printed a real size cardboard prototype at this point but didn't have a lot of time that day, so I skipped the ful size cardboard print and moved eight on to use the material so I could pu some things together at home. OOPS! 
-I don't know what happened
+Why would this box get so many positive reviews if it was made so poorly?! I literally needed two 1/8" plates to make this work for me, and it's not like it stated that anywhere... Why not just make the notches shorter? Or just tell me to use 1/4"... Oh!! that's right it was made for 1/4" panels - which is why I made sure to adjust the slots for the notches to fit 1/8" inches. But that also meant that the these notches had to stick 1/4" out! I just never thought of that.
 
-ere, but I think Illustrator was rounding my scaled values - and the 
-account for the  
-that caused I decreased the overall size of box I did not want to use a lot of material since I felt like uit would be wasteful - 
+That ended up working out for me because I realized I actually really loved the look! - the device didn't feel significant;y heavier or clunckier, yet the top panel had less flex, and a more refined look to it - though I definitely wanted it to be transparent and not blue.
+
+<img src="blue.jpg" width=500px>
+
 
 
 
