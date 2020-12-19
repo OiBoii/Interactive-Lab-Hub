@@ -101,12 +101,16 @@ Even though I wouldn't have had to buy a multiplexer had I gone with the teensy 
 
 ### CARDBOARD PROTOTYPING 
 
-I used a free template I found on the internet as box frame to the design. I read the data sheets of the components to make I am cutting the right sized holes in the box. Eventually after back and forth with mr. NerDIY - it was pointed out to me that I didn't include a place for spacers and screwes to the top and bottom together. Wasn't crucial since I could drill the holes after printing - but it would have been less aesthetic - so that was helpful. That was almost the final design. Again, most of these are just component measurements. The shape of the interlocking components is just a template I found on the internet.
+I used a free template I found on the internet as box frame to the design. I read the data sheets of the components to make I am cutting the right sized holes in the box. I emailed NerDIY again to ask for his opinion and he rocommended that I include a hole for a spacer in the middle to prevent 'flex' from occuring at the middle of the top plate when its applied with pressure. He also recommended that I design separators, since I am using LED lights and wanted to light up indvidual buttons as I pushed them - that way I light wouldnt 'leak' from one place to another - this was a very useful tip but caused me to dislike glue for a while.
+
+That was almost the final design. Again, most of these are just component measurements. The shape of the interlocking components is just a template I found on the internet.
 
 <img src="acrylic_top.jpg" width=500px>
 <img src="bottom.jpg" width=500px>
 
 Things were really starting to come together at this point! That is not the first prototype, but also not the last!
+
+<img src="ca.jpg" width=500px>
 
 **OOPS** 
 I used CNC machining at that point. but since I was using scraps from the maker lab that I didn't pay for myself, I wanted to avoid being wastefull. Since the actual form factor for the device wwas about 7"X7" - I decided to make it smaller and print 'baby' models until I am almost certain of the device I want - and boy dud that causing me issues down the road!
