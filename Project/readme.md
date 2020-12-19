@@ -29,6 +29,22 @@ There are many implementations and DIY guides out there explaining in detail how
 
 It is important to note that MIDI in itself is NOT a soundwave, nor a musical signal of any sort! It is simply a numeric representation of an action - a hardware interrupt. It could be programmed to include a wide spectrum of properties - for example, vibration to emulate a guitar string being strummed on a synthesizer. However, at it's core, it could be a simple push of a button. The sound that is generated is not coming from the MIDI signal, the signal is converted to a MIDI instruction before its transmitted to the software, and that MIDI software is responsible to convert this instruction into sound. The controller is connected to the software via serial communication in this project.
 
+## FORM FACTOR RESEARCH
+
+### RAW FORM
+For the sake of visualization - here is an example of what a *very simlpe* MIDI controller could look like.
+
+<img src="fritz.jpg" width=500px>
+### COMMERCIAL FORM 
+<img src="novation.jpg" width=500px>
+
+The golden standard of MIDI Controllers is the Novation Launch Pad. An expensive yet functional device. There is an Adafruit tutorial that teaches you how to build one. But, I was hoestly a bit dicouraged by it. Especially since there are  ready-to-go kits you can order to make it. (Not to take away anything from the complexity of the process - I just felt like bein a little more creative). The cool takeaway from this design is the **feedback from the LED lights** . I really loved watching videos of people playing that thing - it's intriuing just because of the lights alone! I thought it would be cool to implement a similar feedback using the FastLED arduino library.
+Also, as someone who never played a MIDI Controller - the layout was a bit overwhelming to look at. There were simply too many buttons! I decided to make a smaller version of that.
+
+# DIY FORM
+Now that's were I truly started getting excited - people make that with arcade push buttons! Yes! I was a 90's kid, and I grew up playing arcade games and love the way they feel and sound. I decided I am definitely going to use them over the silicone buttons on the Novation lauchpad. 
+This was by far the most expensive part of the product (definitely worth it though). I wanted the buttons to have a see through time so that the light could be seen through it. 
+
 ## EXPERIMENTING
 
 ### RAW FORM
