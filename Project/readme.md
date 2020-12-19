@@ -103,7 +103,7 @@ Even though I wouldn't have had to buy a multiplexer had I gone with the teensy 
 
 I used a free template I found on the internet as box frame to the design. I read the data sheets of the components to make I am cutting the right sized holes in the box. Eventually after back and forth with mr. NerDIY - it was pointed out to me that I didn't include a place for spacers and screwes to the top and bottom together. Wasn't crucial since I could drill the holes after printing - but it would have been less aesthetic - so that was helpful. That was almost the final design. Again, most of these are just component measurements. The shape of the interlocking components is just a template I found on the internet.
 
-<img src="top.jpg" width=500px>
+<img src="acrylic_top.jpg" width=500px>
 <img src="bottom.jpg" width=500px>
 
 Things were really starting to come together at this point! That is not the first prototype, but also not the last!
