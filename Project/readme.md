@@ -110,13 +110,16 @@ That was almost the final design. Again, most of these are just component measur
 
 Things were really starting to come together at this point! That is not the first prototype, but also not the last!
 
-<img src="ca.jpg" width=500px>
+<img src="box.jpg" width=500px>
 
 **OOPS** 
-I used CNC machining at that point. but since I was using scraps from the maker lab that I didn't pay for myself, I wanted to avoid being wastefull. Since the actual form factor for the device wwas about 7"X7" - I decided to make it smaller and print 'baby' models until I am almost certain of the device I want - and boy dud that causing me issues down the road!
-* I couldn't figure out why it was so difficult to fit the parts together - I scaled everything together and I just didn't understand why this was happening with a template I found online that had thousands of positive reviews. I looked at the printing measurements and they seemed fine. The template was created for 3mm boards, yet there I was in the makerlab, and I couldn'y find anything that would fit aside from some thin wood veneers. I had to smoosh the cardboards with my boots to make it fit - and even then, it barely did. It took me a second, but I finally realized - of course nothing fits they were! I scaled everything down by 50% without accouting for the thickness of the material I was using - so the slots were so much smaller than theu would be in the real size model.
 
-**A BIGGER OOPS** 
+I used CNC machining at that point. but since I was using scraps from the maker lab that I didn't pay for myself, I wanted to avoid being wastefull. Since the actual form factor for the device wwas about 7"X7" - I decided to make it smaller and print 'baby' models until I am almost certain of the device I want - and boy dud that causing me issues down the road!
+
+I couldn't figure out why it was so difficult to fit the parts together - I scaled everything together and I just didn't understand why this was happening with a template I found online that had thousands of positive reviews. I looked at the printing measurements and they seemed fine. The template was created for 3mm boards, yet there I was in the makerlab, and I couldn'y find anything that would fit aside from some thin wood veneers. I had to smoosh the cardboards with my boots to make it fit - and even then, it barely did. It took me a second, but I finally realized - of course nothing fits they were! I scaled everything down by 50% without accouting for the thickness of the material I was using - so the slots were so much smaller than theu would be in the real size model.
+
+**A BIGGER OOPS**
+
 I had just ordered the components when when I was prototyping that day, so I didn't have the physical push buttons to test on a real sized model, and I figured why bother at that time. I'll just wait untill I have them... that caused some drama for me later on. that actually worked out to my benegit but ill get to that later!
 
 ### FINAL ENCCLOSURE
