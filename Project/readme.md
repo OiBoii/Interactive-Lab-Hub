@@ -89,7 +89,7 @@ ArduinoPin-MultiplexerPin
 ## FRITZING SCHEMATIC 
 
 
-<img src="cad.jpg" width=500px>
+<img src="fritzing diagram.jpg" width=500px>
 **Note:** There original design called for resistors but I decided to not include them and integrate 
 ## BREADBOARD PROTOTYPE DESIGN
 
