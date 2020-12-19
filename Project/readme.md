@@ -35,7 +35,9 @@ It is important to note that MIDI in itself is NOT a soundwave, nor a musical si
 For the sake of visualization - here is an example of what a *very simlpe* MIDI controller could look like.
 
 <img src="fritz.jpg" width=500px>
+
 ### COMMERCIAL FORM 
+
 <img src="novation.jpg" width=500px>
 
 The golden standard of MIDI Controllers is the Novation Launch Pad. An expensive yet functional device. There is an Adafruit tutorial that teaches you how to build one. But, I was hoestly a bit dicouraged by it. Especially since there are  ready-to-go kits you can order to make it. (Not to take away anything from the complexity of the process - I just felt like bein a little more creative). The cool takeaway from this design is the **feedback from the LED lights** . I really loved watching videos of people playing that thing - it's intriuing just because of the lights alone! I thought it would be cool to implement a similar feedback using the FastLED arduino library.
