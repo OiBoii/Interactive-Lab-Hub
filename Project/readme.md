@@ -43,50 +43,35 @@ Also, as someone who never played a MIDI Controller - the layout was a bit overw
 
 <img src="novation.jpg" width=500px>
 
-
-
 ### DIY FORM
 Now that's were I truly started getting excited - people make that with arcade push buttons! Yes! I was a 90's kid, and I grew up playing arcade games and love the way they feel and sound. I decided I am definitely going to use them over the silicone buttons on the Novation lauchpad. 
 Note: the buttons were by far the most expensive part of the design (definitely worth it though). Since, I wanted the buttons to be able to see light coming through the buttons, I had to order ones with transparent rim.
 
 <img src="cad.jpg" width=500px>
 
-## PROTOTYPING
+## PAPER PROTOTYPING
 
-### PAPER PROTOTYPING 
+### 2D PAPER PROTOTYPING 
 
-**sketches** I made a lot of sketches and drew a lot of inspiration from existing sources online. I just sketched as many as I could wthout thinking (it doesn't look great) but here is an example
+**sketches:** I made a lot of sketches and drew a lot of inspiration from existing sources online. I just sketched as many as I could wthout thinking (it doesn't look great) but here is an example
 
 <img src="sketches.jpg" width=500px>
 
-**Choosing a layout** After that I made a first a attempt at drawing something that made sense to me. Then I wrote down some instructions I was uncertain if people will naturally understand how to do. I asked 4 different people to do basic things with the prototype and noted what they did wrong. 
+**Choosing a layout:** After that I made a first a attempt at drawing something that made sense to me. Then I wrote down some instructions I was uncertain if people will naturally understand how to do. I asked 4 different people to do basic things with the prototype and noted what they did wrong. 
 
 <img src="test.jpg" width=500px>
 
-**Testing a prototype** People performed all the right actions except one! All of the totally ignored the USB (at the top) and tried to turn the machine off simply by pressing the on/off button at the top right corner. So, I had to find a better way to go about it. 
+**Testing a prototype:** People performed all the right actions except one! All of the totally ignored the USB (at the top) and tried to turn the machine off simply by pressing the on/off button at the top right corner. So, I had to find a better way to go about it. 
 
-## BREADBOARD PROTOTYPE DESIGN
+**Takeaways**
 
-No issues here! the prototype includes an array 4 buttons (1 line from the array) and 4 potentiometers 
-Code:
-Fritzing Schematic:
-Picture circuit:
-Video:
-
-**Takeaways:** 
-* Circuit and code work!
-* need to extend the code if interested in using multiple banks of instruements in parallel
-* software may take a bit to get used to
-
-#### 2D PROTOTYPING 
-
-**Too Simple** I really never played a MIDI controller, but one day at the maker lab I saw a MIDI controller tin the form of a piano. I thought about it for a second and then I realized that I don't think I have seen an example of a 3X3 controller - which would make sense! there are 12 keys on a piano, and it would be weird to design an instrument that cannot be mapped to all the notes at once. So I decided to make the array a 4X4 (or a 3X4 at the very least) and increase the numbers of potentiometers.
+**Too Simple:** I really never played a MIDI controller, but one day at the maker lab I saw a MIDI controller tin the form of a piano. I thought about it for a second and then I realized that I don't think I have seen an example of a 3X3 controller - which would make sense! there are 12 keys on a piano, and it would be weird to design an instrument that cannot be mapped to all the notes at once. So I decided to make the array a 4X4 (or a 3X4 at the very least) and increase the numbers of potentiometers.
 
 * **Buttons:** After looking at multiple setups of different MIDI controllers, I decided that since I have never used this kind of device before it would be best to have less buttons then more. So, instead of making a traditional 8X8 array of small silicone buttons I decided to go with a 4X4 array of large arcade push buttons. To make up the difference, I will try to integrate a switch button on the side so that I could switch between 4 different sets of instruments while playing.
 
 * **Sliders Vs Knobs:** I tried to play with different layouts using a piece of paper when deciding between sliders and knobs. The truth is, I couldn't tell the difference that much, both of them were reasonably comfortable to use and rather intuituitive (even with my less than ideal coordination) but ultimately, I ended up choosing to implement only knobs in the design. The simply take much less space and provide the same functionality as sliders and will allow additional sound effects to be loaded.
 
-#### 3D PROTOTYPING (CARDBOARD)
+#### 3D(ISH) PROTOTYPING
 
 **I am very happy that I did not skip that part of the experimentation because I realized two important things aobut the design. 
    * I will not need an off button since the controller always have to be connected to the computer and will be powered by the Arduino.
@@ -100,13 +85,11 @@ Video:
 * **Location of the potentiometers:** I immidiately found out that I wanted to leave space for some of the potentiometers on the top of the box. Since they have a higher profile then all the other components, it wouldn't make much sens to place them closer to me as they would obstruct the push buttons array. This way they will also be accessible to be controlled with both my hands.
 
   * **Update:**   After I realized I wanted to use 8 potentiometers instead of 4, I could'nt determine whether I wanted them to be on left or the right side of the arcade push buttons array. I initially thought it would be less comfortable for me to use my left hand to control them, but then I realized it wouldn't make much sense to put them on the right side because that would delegate to much responsibility to my right hand. For sanity check, I looked at many other designs and confirmed that this was indeed the case - more often than not, knobs and sliders were placed to the left of the keys.
- 
-### PROTOTYPING
 
-I found [this](https://www.solidsmack.com/cad/model-week-staal3d-midi-controller-everbody-midi-fightin) beautiful CAD design online. I am going to make some modifications to it and upload them as soon as possible.
-v
+## DIGITAL PROTOTYPING
+Choosign the components allowed me to have a little more structure when I went about desigining the enclosure since I knew what were the measurements I needed to consider.
 
-## COMPONENTS
+### COMPONENTS
 
 <img src="components.jpg" width=500px>
 
@@ -114,6 +97,31 @@ v
 Even though I wouldn't have had to buy a multiplexer had I gone with the teensy board (since it has 25 input pins - exactly as much as I need). I opted for an Arduino Pro Micro (18 input pins) + Multiplexer because there is simply much more resources available for it. 
 * **Lights:** I chose the RGB LED strips because they would be much more convinient to use without a breadboard. 
 * **Buttons:** 16 transparent arcade buttons for the top plate + one on the side. The buttons don't have to be entirely clear, but it is important that they are at least somewhat seathrough so that the LED lights could be seen. This is important not just for decorative purposes - it is also crucial because the light is going to indicate the type of feedback the button is providing (on click, continuous output, etc.)
+
+
+### CARDBOARD PROTOTYPING 
+
+I used a free template I found on the internet as box frame to the design. I read the data sheets of the components to make I am cutting the right sized holes in the box. Eventually after back and forth with mr. NerDIY - it was pointed out to me that I didn't include a place for spacers and screwes to the top and bottom together. Wasn't crucial since I could drill the holes after printing - but it would have been less aesthetic - so that was helpful. That was almost the final design. Again, most of these are just component measurements. The shape of the interlocking components is just a template I found on the internet.
+
+<img src="top.jpg" width=500px>
+<img src="bottom.jpg" width=500px>
+
+Things were really starting to come together at this point! That is not the first prototype, but also not the last!
+
+**OOPS** 
+I used CNC machining at that point. but since I was using scraps from the maker lab that I didn't pay for myself, I wanted to avoid being wastefull. Since the actual form factor for the device wwas about 7"X7" - I decided to make it smaller and print 'baby' models until I am almost certain of the device I want - and boy dud that causing me issues down the road!
+* I couldn't figure out why it was so difficult to fit the parts together - I scaled everything together and I just didn't understand why this was happening with a template I found online that had thousands of positive reviews. I looked at the printing measurements and they seemed fine. The template was created for 3mm boards, yet there I was in the makerlab, and I couldn'y find anything that would fit aside from some thin wood veneers. I had to smoosh the cardboards with my boots to make it fit - and even then, it barely did. It took me a second, but I finally realized - of course nothing fits they were! I scaled everything down by 50% without accouting for the thickness of the material I was using - so the slots were so much smaller than theu would be in the real size model.
+
+**A BIGGER OOPS** 
+I had just ordered the components when when I was prototyping that day, so I didn't have the physical push buttons to test on a real sized model, and I figured why bother at that time. I'll just wait untill I have them... that caused some drama for me later on. that actually worked out to my benegit but ill get to that later!
+
+### FINAL ENCCLOSURE
+when the buttons and the rest of the components arrived (I ordered white acrylic to print the enclosure since I thought it would look nice with the RGB LEDs). Iwent to the make lab and was eager to start cutting the material. After testing the printer on a cardboard again, I realized I accidentally saved the file last time when I scaled it, so I had to scale it up again. I SHOULD HAVE printed a real size cardboard prototype at this point but didn't have a lot of time that day, so I skipped the ful size cardboard print and moved eight on to use the material so I could pu some things together at home. OOPS! 
+I don't know what happened
+
+ere, but I think Illustrator was rounding my scaled values - and the 
+account for the  
+that caused I decreased the overall size of box I did not want to use a lot of material since I felt like uit would be wasteful - 
 
 
 
