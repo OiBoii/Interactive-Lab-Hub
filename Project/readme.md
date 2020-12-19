@@ -110,7 +110,7 @@ That was almost the final design. Again, most of these are just component measur
 
 Things were really starting to come together at this point! That is not the first prototype, but also not the last!
 
-<img src="box.jpg" width=500px>
+<img src="cardboard.jpg" width=500px>
 
 **OOPS** 
 
