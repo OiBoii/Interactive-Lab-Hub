@@ -49,6 +49,8 @@ Note: the buttons were by far the most expensive part of the design (definitely 
 
 <img src="cad.jpg" width=500px>
 
+
+
 ## PAPER PROTOTYPING
 
 ### 2D PAPER PROTOTYPING 
@@ -89,7 +91,7 @@ Note: the buttons were by far the most expensive part of the design (definitely 
 ## DIGITAL PROTOTYPING
 Choosign the components allowed me to have a little more structure when I went about desigining the enclosure since I knew what were the measurements I needed to consider.
 
-### COMPONENTS
+#### COMPONENTS
 
 <img src="components.jpg" width=500px>
 
@@ -99,7 +101,7 @@ Even though I wouldn't have had to buy a multiplexer had I gone with the teensy 
 * **Buttons:** 16 transparent arcade buttons for the top plate + one on the side. The buttons don't have to be entirely clear, but it is important that they are at least somewhat seathrough so that the LED lights could be seen. This is important not just for decorative purposes - it is also crucial because the light is going to indicate the type of feedback the button is providing (on click, continuous output, etc.)
 
 
-### CARDBOARD PROTOTYPING 
+#### CARDBOARD PROTOTYPING 
 
 I used a free template I found on the internet as box frame to the design. I read the data sheets of the components to make I am cutting the right sized holes in the box. I emailed NerDIY again to ask for his opinion and he rocommended that I include a hole for a spacer in the middle to prevent 'flex' from occuring at the middle of the top plate when its applied with pressure. He also recommended that I design separators, since I am using LED lights and wanted to light up indvidual buttons as I pushed them - that way I light wouldnt 'leak' from one place to another - this was a very useful tip but caused me to dislike glue for a while.
 
@@ -135,11 +137,29 @@ That ended up working out for me because I realized I actually really loved the 
 
 <img src="blue.jpg" width=500px>
 
-
-
-
 ## CIRCUIT DESIGN
-This circuit is incredibly simple (or so I thought). Here is the pin layout:
+
+
+### MINI BREADBOARD CIRCUIT AND CODE
+No issues here! the prototype includes an array 4 buttons (1 line from the array) and 4 potentiometers. I looked at a few tutorias and experimented with a few components I had to design the circuit.
+
+Code:
+Fritzing Schematic:
+Picture circuit:
+Video:
+
+**Takeaways:** 
+* Circuit and code work!
+* need to extend the code if interested in using multiple banks of instruements in parallel
+* software may take a bit to get used to
+
+
+## FRITZING SCHEMATIC  
+After going through a breezy tutorial and desiging a mini circuit I was confident I'd have no problem executing the full version. I should have given myselg less credit. but I will get to that later. I read a few articles and found some solid DIY tutorials, and came out with this circuit.
+
+<img src="fritzing diagram.jpg" width=500px>
+
+
 ### PRO MICRO 
 * Potentiometers: X8 Analog Pins (A0-A3 & 6-9)
 * Side Pushbutton: X1 Digital Pin (3)
@@ -155,11 +175,6 @@ ArduinoPin-MultiplexerPin
 ### MULTIPLEXER
 * 16 Push-Buttons: X16 Digital Pins (C0-C15)
 * Enable was connected with ground 
-
-## FRITZING SCHEMATIC 
-
-<img src="fritzing diagram.jpg" width=500px>
-**Note:** There original design called for resistors but I decided to not include them and integrate 
 
 
 ## Prototyping des DESIGN
