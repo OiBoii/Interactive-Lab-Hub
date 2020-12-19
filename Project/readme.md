@@ -139,7 +139,6 @@ That ended up working out for me because I realized I actually really loved the 
 
 ## CIRCUIT DESIGN
 
-
 ### MINI BREADBOARD CIRCUIT AND CODE
 No issues here! the prototype includes an array 4 buttons (1 line from the array) and 4 potentiometers. I looked at a few tutorias and experimented with a few components I had to design the circuit.
 
@@ -154,17 +153,18 @@ Video:
 * software may take a bit to get used to
 
 
-## FRITZING SCHEMATIC  
+### FRITZING SCHEMATIC  
 After going through a breezy tutorial and desiging a mini circuit I was confident I'd have no problem executing the full version. I should have given myselg less credit. but I will get to that later. I read a few articles and found some solid DIY tutorials, and came out with this circuit.
 
 <img src="fritzing diagram.jpg" width=500px>
 
 
-### PRO MICRO 
+#### PRO MICRO 
 * Potentiometers: X8 Analog Pins (A0-A3 & 6-9)
 * Side Pushbutton: X1 Digital Pin (3)
 * 16-LED Strips: X1 Analog Pin (5)
-### Arduino - Multiplexer 
+
+#### Arduino - Multiplexer 
 ArduinoPin-MultiplexerPin     
   * Digital Pin 2 - S0
   * Digital Pin 15 (SCLK) - S1
@@ -172,13 +172,42 @@ ArduinoPin-MultiplexerPin
   * Digital Pin 14 (MISO) - S3
   * Digital Pin 10 - SIG
   
-### MULTIPLEXER
+#### MULTIPLEXER
 * 16 Push-Buttons: X16 Digital Pins (C0-C15)
 * Enable was connected with ground 
 
 
-## Prototyping des DESIGN
-Conclusion - Continuoity check was done, and similar code was uploaded 
-## ISSUES
+## HARDWARE 
+
+Full Circuit:
+
+### BEST STATUS
+I have no proof of that because it was very brief (less then 20 seconds) but the device would light up and interface with FL Studios to profuce a sample - **however it did that only when I flipped it upsidedown** and I can't replicate it
+
+### DEBUGGING
+I performed a continuity and tested portions of the code on parts of the circuit and nothing was out of the ordinary. 
+I unfortunately have to come to the conclusion that I need to take it apart in order to make this work at that point - which is very upsetting but I fully intend to do it over the winter break
+
+### CURRENT STATUS
+The device is recognized as midi input by FL STUDIOS but doesn't produce a sound
+
+
+### ISSUES
+I know I dont have a proof of that but the device did work for like 5 seconds when I moved it from my lap to my desk. It was as if conncections were unstable but
+As mentioned. I was able to create a mini version of this citcuit rather easily. but here is where things got very unfortunate for me. Here are the things I didn't consider but were a huge obstacle for meonce I started working on the final circuit. 
+1) I didn't check the components before starting to work with them (I didnt test the Ardino)
+2) I got a best selling box of wires from amazon, but they were so flimsy and so uncomfortable to use, that they casued so much trouble with the actual circuitry that I believe process that I believe this is why the device is not working right now - the wires are instable
+3) I probably soldered over 500 connections together and that could take a real ohysical toll on the hand. I burnt myself multiple times because I was just so fatigued from working with the soldering iron that I may have soldered the wrong connections (though I have done a continuity check and npthing was seemed to be shorted). The quality of the wires certainly didn't help here as they kept ripping with the slitest adjustaments.
+4) The arrows on the RGB LED strips were pointing the wrong way! so only one light turned on (because I connected them from the end of the strip rather than the begining. It's fixed now, but I am out of solder at the moment and can't attach all 16 of them together.
 
 ## FUTURE WORK (WINTER BREAK)
+I fully intend to develop this documentation over the course of the winter break and design a pcb for this device. I will keep you posted!
+
+## SOFTWARE
+This is the code I made in partneship with NerDIY - I have no way to know whether or not this code is fully working because I never actually implemnted the full scope of the design on a breadboard - because that would be a whole lot of breadboard to cover. 
+However, I can confidently say that all the different portions of the code were tested and are worked on a smaller scale.
+The Code:
+
+## GALLERY
+
+
