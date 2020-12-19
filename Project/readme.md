@@ -7,51 +7,55 @@ For the final project I am going to create my own midi controller to create musi
 MIDI (Musical Instrument Digital Interface) is a communication standard that allows digital music gear to speak the same language. A MIDI controller is a device capable of transmitting and recieving these MIDI messages, allowing direct control over mixing programs. Buttons on MIDI controllers are programmable and could be mapped to perform many different functions to optimize workflow or produce different sounds. 
 
 ## WHY A MIDI CONTROLLER?
-The reason I chose to work on this project is simple. This is an **Interactive** Device design class - I took circuits classes before and have done my fair share of microcontroller programming projects, but it was all done with breadboard . I was more interested in creating a good design rather than a complicated circuit and complex code. As a side note - I am very happy I didn't create a more complicated circuit because if it was so much more complicated to implement it a circuit within the context of reality (outside the breadboard) that I wouldn't have had the time to come up with a good form factor. I did a large portion of the research on understanding the funcitons of a MIDI controller and its different compononent. The bulk of this project was understanding the design process of a product that is intuitive to use. 
+The reason I chode to work on this project is simple. I was more inThis is an **Interactive** Device design class - I took circuits classes before and have done my fair share of microcontroller programming projects, but it was all done with breadboard . I was more interested in creating a good design rather than a complicated circuit and complex code. I did a large portion of the research on understanding the funcitons of a MIDI controller and its different compononent. The bulk of this project was understanding the design process of a product that is intuitive to use. 
+
+## INTERESTING KEY LEARNINGS
+That engineers take a lot of things for granted when it comes to design. We often blame ourselves when we can't seem to figure our how to use certain devices. However in reality - it's probably the designer's fault. Which was a very eye openeing concept for me. My first few physical prototypes of the device (NOT the circuit - the enclosure), were fairly simple, but also not informative enough. Most prototypes were recorded, and notes were taken to document how organically the process came through at together at the end.
+
+I didn't consider the travel distance between the buttons
+I didn't realize that putting an *ON/OFF* button on the device would be *confusing* to people since the device coud only work when it's *plugged to a computer directly*. In reality when I put a push button for on and off pthe two people that i tested said they percieved the usb port as something that is used to insert content or store data on the device rather than power it.
+
+I made the device way too tall and top heavy (since most of the component are buttons they were mounted at the top).
+I did not realize that by mounting things on the bottom and the top of the device I wont be able to 
 
 ## FULL DISCLOSURE
 There are many implementations and DIY guides out there explaining in detail how to make your own midi controller. So some of the content here is obtained from different sources on the web. However, the main person to help me iterate through the design process was a friendly Youtube channel owner that made some tutorials about how to make midi controllers. He specifically asked me NOT to link his channel because he is not interested in starting to get messages from people on a regular basis. To qupte his words - " I am always happy to help when people ask for my advice, however, I would'nt want to publically volunteer this information so to not get overwhelemd with every little question someone might have, if that makes sense? If you do post these anywhere, please DO NOT link my channel! You can just say - "Thank you nerDIYmusic" and I'll know what that means. so here it is - **Thank you for the help NerDIYMusician** for your help with the enclosure design and code - it was fun! 
 
-## INTERESTING KEY LEARNINGS
-The main point that occured to me is that engineers take a lot of things for granted when it comes to design. people often blame themselves for not understanding how to use technology. However, it's far more likely that the engineers who designed that technology just dont understand people's needs. In other words, it's probably the designer's fault that you can't understand how to turn on the TV or use microwave at places that aren't your home. Which was a very eye openeing concept for me. My first few physical prototypes of the device (NOT the circuit - the enclosure), were fairly simple, but also not informative enough. Most prototypes were recorded, and notes were taken to document how organically the process came through at together at the end.
-
-* I didn't consider the travel distance between the buttons
-* I didn't realize that putting an *ON/OFF* button on the device would be *confusing* to people since the device coud only work when it's *plugged to a computer directly*. In reality when I put a push button for on and off pthe two people that i tested said they percieved the usb port as something that is used to insert content or store data on the device rather than power it.
-* I made the device way too tall and top heavy (since most of the component are buttons they were mounted at the top).
-* I did not realize that by mounting things on the bottom and the top of the device I wont be able to open it up after putting it together - never use glue!
-* On that note - NEVER USE GLUE unless youre in pretty early stages of prototyping and material isn't expensive, and or it's absolutely necessarry. I honestly didn't realize my dislike of for glue until I had to do something a little more complicated than sticking two papers together. 
-* The worst thing you can do is buying really cheap materials to work with - down to the wire quality.
-
-But i'll get to all of that later.
-
-### MIDI PROTOCOLS 
+### DIAGRAM 
 <img src="diagram.jpg" width=500px>
 
 It is important to note that MIDI in itself is NOT a soundwave, nor a musical signal of any sort! It is simply a numeric representation of an action - a hardware interrupt. It could be programmed to include a wide spectrum of properties - for example, vibration to emulate a guitar string being strummed on a synthesizer. However, at it's core, it could be a simple push of a button. The sound that is generated is not coming from the MIDI signal, the signal is converted to a MIDI instruction before its transmitted to the software, and that MIDI software is responsible to convert this instruction into sound. The controller is connected to the software via serial communication in this project.
 
 ## EXPERIMENTING
 
-### RAW FORM
+### SIMPLEST FORM
 For the sake of visualization - here is an example of what a *very simlpe* MIDI controller could look like.
 
 <img src="fritz.jpg" width=500px>
-### COMMERCIAL FORM 
-<img src="novation_launchpad.jpg" width=500px>
-
-The golden standard of MIDI Controllers is the Novation Launch Pad. An expensive yet functional device. There is an Adafruit tutorial that teaches you how to build one. But, I was hoestly a bit dicouraged by it. Especially since there are  ready-to-go kits you can order to make it. (Not to take away anything from the complexity of the process - I just felt like bein a little more creative). The cool takeaway from this design is the **feedback from the LED lights** . I really loved watching videos of people playing that thing - it's intriuing just because of the lights alone! I thought it would be cool to implement a similar feedback using the FastLED arduino library.
-Also, as someone who never played a MIDI Controller - the layout was a bit overwhelming to look at. There were simply too many buttons! I decided to make a smaller version of that.
-
-# DIY FORM
-Now that's were I truly started getting excited - people make that with arcade push buttons! Yes! I am a 90's kid, and I grew up playing arcade games and love the feel of these buttons. I decided I am definitely going to use them over the silicone buttons on the Novation lauchpad. 
-This was by far the most expensive part of the product (definitely worth it though). I wanted the buttons to have a see through time so that the light could be seen through it. 
 
 ### PAPER PROTOTYPING 
 
-* **Buttons:** After looking at multiple setups of different MIDI controllers, I decided that since I have never used this kind of device before it would be best to have less buttons then more. So, instead of making a traditional 8X8 array of small silicone buttons I decided to opt for a 4X4 array of arcade push buttons. 
+#### 2D PROTOTYPING 
 
-* **Sliders Vs Knobs:** I tried to play with different layouts using a piece of paper when deciding between sliders and knobs. The truth is, I couldn't tell the difference that much, both of them were reasonably comfortable to use and rather intuituitive (even with my less than ideal coordination like mine) but ultimately, I ended up choosing to implement only knobs in the design because it seemed silly to get both of them when I could only find them in packs of 20 (mind you I was working on during COVID and stocks of certain items were limited). 
+**sketches** I made a lot of sketches and drew a lot of inspiration from existing sources online. I just sketched as many as I could wthout thinking (it doesn't look great) but here is an example
 
-I am very happy that I did not skip that part of the experimentation because I realized two important things aobut the design. 
+<img src="fritz.jpg" width=500px>
+
+**Choosing a layout** After that I made a first a attempt at drawing something that made sense to me. Then I wrote down some instructions I was uncertain if people will naturally understand how to do. I asked 4 different people to do basic things with the prototype and noted what they did wrong. 
+
+<img src="fritz.jpg" width=500px>
+
+**Testing a prototype** People performed all the right actions except one! All of the totally ignored the USB (at the top) and tried to turn the machine off simply by pressing the on/off button at the top right corner. So, I had to find a better way to go about it. 
+
+**Too Simple** I really never played a MIDI controller, but one day at the maker lab I saw a MIDI controller tin the form of a piano. I thought about it for a second and then I realized that I don't think I have seen an example of a 3X3 controller - which would make sense! there are 12 keys on a piano, and it would be weird to design an instrument that cannot be mapped to all the notes at once. So I decided to make the array a 4X4 (or a 3X4 at the very least) and increase the numbers of potentiometers.
+
+* **Buttons:** After looking at multiple setups of different MIDI controllers, I decided that since I have never used this kind of device before it would be best to have less buttons then more. So, instead of making a traditional 8X8 array of small silicone buttons I decided to go with a 4X4 array of large arcade push buttons. To make up the difference, I will try to integrate a switch button on the side so that I could switch between 4 different sets of instruments while playing.
+
+* **Sliders Vs Knobs:** I tried to play with different layouts using a piece of paper when deciding between sliders and knobs. The truth is, I couldn't tell the difference that much, both of them were reasonably comfortable to use and rather intuituitive (even with my less than ideal coordination) but ultimately, I ended up choosing to implement only knobs in the design. The simply take much less space and provide the same functionality as sliders and will allow additional sound effects to be loaded.
+
+#### 3D PROTOTYPING (CARDBOARD)
+
+**I am very happy that I did not skip that part of the experimentation because I realized two important things aobut the design. 
    * I will not need an off button since the controller always have to be connected to the computer and will be powered by the Arduino.
    * I originally set out to get 16 buttons - but I actually needed 17! (16 for the main array of synths + 1 to switch between sets of instruments.)
   
@@ -64,7 +68,7 @@ I am very happy that I did not skip that part of the experimentation because I r
 
   * **Update:**   After I realized I wanted to use 8 potentiometers instead of 4, I could'nt determine whether I wanted them to be on left or the right side of the arcade push buttons array. I initially thought it would be less comfortable for me to use my left hand to control them, but then I realized it wouldn't make much sense to put them on the right side because that would delegate to much responsibility to my right hand. For sanity check, I looked at many other designs and confirmed that this was indeed the case - more often than not, knobs and sliders were placed to the left of the keys.
  
-### DIGITAL PROTOTYPING
+### PROTOTYPING
 
 I found [this](https://www.solidsmack.com/cad/model-week-staal3d-midi-controller-everbody-midi-fightin) beautiful CAD design online. I am going to make some modifications to it and upload them as soon as possible.
 <img src="cad.jpg" width=500px>
@@ -79,8 +83,15 @@ Even though I wouldn't have had to buy a multiplexer had I gone with the teensy 
 * **Lights:** I chose the RGB LED strips because they would be much more convinient to use without a breadboard. 
 * **Buttons:** 16 transparent arcade buttons for the top plate + one on the side. The buttons don't have to be entirely clear, but it is important that they are at least somewhat seathrough so that the LED lights could be seen. This is important not just for decorative purposes - it is also crucial because the light is going to indicate the type of feedback the button is providing (on click, continuous output, etc.)
 
-## CIRCUIT DESIGN
+## BREADBOARD PROTOTYPE DESIGN
 
+Mkaing this was a breeze. the prototype includes an array 4 buttons (1 line from the array) and 4 potentiometers 
+Code:
+Fritzing Schematic:
+Picture circuit:
+Video:
+
+## CIRCUIT DESIGN
 This circuit is incredibly simple (or so I thought). Here is the pin layout:
 ### PRO MICRO 
 * Potentiometers: X8 Analog Pins (A0-A3 & 6-9)
@@ -100,15 +111,11 @@ ArduinoPin-MultiplexerPin
 
 ## FRITZING SCHEMATIC 
 
-
 <img src="fritzing diagram.jpg" width=500px>
 **Note:** There original design called for resistors but I decided to not include them and integrate 
-## BREADBOARD PROTOTYPE DESIGN
 
-## NOT
-## CODE
 
-## FINAL DESIGN
+## Prototyping des DESIGN
 Conclusion - Continuoity check was done, and similar code was uploaded 
 ## ISSUES
 
